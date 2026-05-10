@@ -87,12 +87,13 @@ export class MultiKeyGeminiClient {
   ): Promise<{ text: string; chunks?: any[] }> {
     const client = this.createClient(status.key);
     
-    const config: any = {
-      responseMimeType: "application/json",
-    };
+    const config: any = {};
     
+    // Gemini doesn't support tools (grounding) with JSON response type
     if (useGrounding) {
       config.tools = [{ googleSearch: {} }];
+    } else {
+      config.responseMimeType = "application/json";
     }
 
     const response = await client.models.generateContent({
