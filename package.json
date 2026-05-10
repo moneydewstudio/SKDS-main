@@ -7,10 +7,10 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "worker": "tsx scripts/hourlyWorker.ts",
-    "worker:force": "tsx scripts/hourlyWorker.ts --force",
-    "worker:status": "tsx scripts/hourlyWorker.ts --status",
-    "worker:reset-keys": "tsx scripts/hourlyWorker.ts --reset-keys"
+    "worker": "node --import=tsx --import=dotenv/config scripts/hourlyWorker.ts",
+    "worker:force": "node --import=tsx --import=dotenv/config scripts/hourlyWorker.ts --force",
+    "worker:status": "node --import=tsx --import=dotenv/config scripts/hourlyWorker.ts --status",
+    "worker:reset-keys": "node --import=tsx --import=dotenv/config scripts/hourlyWorker.ts --reset-keys"
   },
   "dependencies": {
     "react": "^19.2.3",
