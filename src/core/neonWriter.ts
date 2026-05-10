@@ -49,11 +49,19 @@ export const saveBatchToNeon = async (
         id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
         topic_id UUID,
         name TEXT NOT NULL,
-        code TEXT,  -- matches metadata subtopicCode
+        code TEXT,
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         UNIQUE(topic_id, name)
       )
     `;
+    
+    // Add code column if missing (migration from old schema)
+    try {
+      await sql`ALTER TABLE subtopics ADD COLUMN IF NOT EXISTS code TEXT`;
+      console.log('[Neon] Added code column to subtopics');
+    } catch (e: any) {
+      console.log('[Neon] Note: subtopics code column:', e.message);
+    }
 
     // Themes table (3rd level hierarchy) - create without FK first
     await sql`
