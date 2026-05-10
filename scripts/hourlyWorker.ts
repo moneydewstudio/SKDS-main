@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import 'dotenv/config';
+import { fileURLToPath } from 'node:url';
 import { loadPipelines } from '../src/core/pipelineLoader';
 import { selectPipelines, generateHourBucket, getDifficultyForHour } from '../src/core/router';
 import { runPipeline, buildContext } from '../src/core/promptBuilder';
@@ -130,8 +131,9 @@ const parseArgs = (): WorkerOptions => {
   };
 };
 
-// Main execution
-if (require.main === module) {
+// Main execution (ESM equivalent of require.main === module)
+const isMain = process.argv[1] === fileURLToPath(import.meta.url);
+if (isMain) {
   const options = parseArgs();
   
   // Handle status display
