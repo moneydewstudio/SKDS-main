@@ -1,0 +1,74 @@
+[
+  {
+    "question": "Prinsip dasar NKRI yang menjamin kesetaraan seluruh wilayah dari Sabang sampai Merauke adalah...",
+    "options": {
+      "A": "Sistem federal dengan pemerintahan daerah yang otonom",
+      "B": "Negara kesatuan dengan pembagian kekuasaan secara desentralisasi",
+      "C": "Sistem konfederasi dengan negara bagian yang merdeka",
+      "D": "Pemerintahan sentralistik tanpa otonomi daerah",
+      "E": "Negara serikat dengan provinsi sebagai negara bagian"
+    },
+    "answer": "B",
+    "explanation": "NKRI adalah negara kesatuan (bukan federal/serikat) dengan sistem desentralisasi yang memberikan kewenangan kepada daerah melalui otonomi."
+  },
+  {
+    "question": "Wawasan Nusantara adalah cara pandang bangsa Indonesia mengenai diri dan lingkungannya sebagai...",
+    "options": {
+      "A": "Negara kepulauan dengan berbagai kekayaan sumber daya",
+      "B": "Negara dengan wilayah terluas di Asia Tenggara",
+      "C": "Negara maritim dengan fokus pada perdagangan",
+      "D": "Negara agraris dengan pertanian sebagai basis ekonomi",
+      "E": "Negara industri dengan fokus pembangunan manufaktur"
+    },
+    "answer": "A",
+    "explanation": "Wawasan Nusantara memandang Indonesia sebagai negara kepulauan (archipelagic state) dengan kekayaan sumber daya alam, manusia, dan sosial budaya."
+  },
+  {
+    "question": "Lambang negara Garuda Pancasila memiliki jumlah bulu sayap yang melambangkan...",
+    "options": {
+      "A": "Jumlah provinsi di Indonesia",
+      "B": "Jumlah sila dalam Pancasila",
+      "C": "Tanggal Proklamasi Kemerdekaan",
+      "D": "Jumlah hari dalam seminggu",
+      "E": "Jumlah suku bangsa di Indonesia"
+    },
+    "answer": "C",
+    "explanation": "Garuda Pancasila memiliki 17 bulu di sayap kanan, 17 di sayap kiri, 8 bulu ekor, 19 bulu di leher bawah, dan 45 bulu di leher atas = melambangkan tanggal 17-8-1945."
+  },
+  {
+    "question": "Penerapan otonomi daerah yang berlebihan hingga mengabaikan kepentingan nasional melanggar prinsip...",
+    "options": {
+      "A": "Desentralisasi",
+      "B": "Delegasi",
+      "C": "Sentralisasi",
+      "D": "Unitarisme",
+      "E": "Federasi"
+    },
+    "answer": "D",
+    "explanation": "Unitarisme (negara kesatuan) menuntut kesatuan dalam pengelolaan negara, otonomi tidak boleh mengabaikan kepentingan nasional."
+  },
+  {
+    "question": "Sumpah Pemuda tahun 1928 merupakan tonggak penting dalam pembentukan...",
+    "options": {
+      "A": "Sistem pemerintahan Indonesia",
+      "B": "Identitas nasional Indonesia",
+      "C": "Ekonomi Indonesia",
+      "D": "Militer Indonesia",
+      "E": "Hubungan luar negeri Indonesia"
+    },
+    "answer": "B",
+    "explanation": "Sumpah Pemuda menyatukan berbagai kelompok pemuda dari seluruh Nusantara dalam satu identitas: tanah air Indonesia, bangsa Indonesia, bahasa Indonesia."
+  },
+  {
+    "question": "Bhinneka Tunggal Ika dalam konteks NKRI berarti...",
+    "options": {
+      "A": "Semua suku harus menyerahkan budayanya ke suku mayoritas",
+      "B": "Berbeda-beda tetap satu dalam keberagaman",
+      "C": "Indonesia terdiri dari satu suku dan satu budaya",
+      "D": "Keberagaman harus dihapus untuk persatuan",
+      "E": "Hanya satu agama yang diakui negara"
+    },
+    "answer": "B",
+    "explanation": "Bhinneka Tunggal Ika berarti 'Berbeda-beda tetapi tetap satu jua' - mengakui keberagaman sambil mempertahankan kesatuan dalam NKRI."
+  }
+]

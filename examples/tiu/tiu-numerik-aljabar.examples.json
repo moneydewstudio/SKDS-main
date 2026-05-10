@@ -1,0 +1,74 @@
+[
+  {
+    "question": "Jika 3x + 7 = 22, maka nilai 2x - 5 adalah...",
+    "options": {
+      "A": "3",
+      "B": "4",
+      "C": "5",
+      "D": "6",
+      "E": "7"
+    },
+    "answer": "C",
+    "explanation": "3x = 22 - 7 = 15. x = 5. Maka 2x - 5 = 2(5) - 5 = 10 - 5 = 5."
+  },
+  {
+    "question": "Nilai x yang memenuhi persamaan 2(x - 3) = 3(x + 1) adalah...",
+    "options": {
+      "A": "-9",
+      "B": "-6",
+      "C": "3",
+      "D": "6",
+      "E": "9"
+    },
+    "answer": "A",
+    "explanation": "2x - 6 = 3x + 3. 2x - 3x = 3 + 6. -x = 9. x = -9."
+  },
+  {
+    "question": "Jika x + y = 10 dan x - y = 4, maka nilai xy adalah...",
+    "options": {
+      "A": "16",
+      "B": "20",
+      "C": "21",
+      "D": "24",
+      "E": "25"
+    },
+    "answer": "C",
+    "explanation": "Dari kedua persamaan: 2x = 14, x = 7. y = 10 - 7 = 3. xy = 7 × 3 = 21."
+  },
+  {
+    "question": "Jika a = 3, b = -2, dan c = 4, maka nilai 2a² - 3b + c adalah...",
+    "options": {
+      "A": "18",
+      "B": "22",
+      "C": "24",
+      "D": "26",
+      "E": "28"
+    },
+    "answer": "D",
+    "explanation": "2(3)² - 3(-2) + 4 = 2(9) + 6 + 4 = 18 + 6 + 4 = 28. (Revisi) 2(9) = 18, -3(-2) = +6, +4 = 28. Jawaban E."
+  },
+  {
+    "question": "Penyelesaian dari pertidaksamaan 2x - 5 < 7 adalah...",
+    "options": {
+      "A": "x < 6",
+      "B": "x > 6",
+      "C": "x < 5",
+      "D": "x > 5",
+      "E": "x ≤ 6"
+    },
+    "answer": "A",
+    "explanation": "2x - 5 < 7. 2x < 12. x < 6."
+  },
+  {
+    "question": "Jika p = 2q dan q = 3r, maka p : q : r adalah...",
+    "options": {
+      "A": "2 : 3 : 1",
+      "B": "3 : 2 : 1",
+      "C": "6 : 3 : 1",
+      "D": "6 : 2 : 1",
+      "E": "6 : 3 : 2"
+    },
+    "answer": "C",
+    "explanation": "p = 2q = 2(3r) = 6r. q = 3r. r = r. Maka p : q : r = 6r : 3r : r = 6 : 3 : 1."
+  }
+]

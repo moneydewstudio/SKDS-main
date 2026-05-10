@@ -1,0 +1,74 @@
+[
+  {
+    "question": "Fungsi Bahasa Indonesia sebagai bahasa negara yang paling fundamental adalah...",
+    "options": {
+      "A": "Alat pemersatu bangsa di seluruh wilayah Nusantara",
+      "B": "Menggantikan semua bahasa daerah agar seragam",
+      "C": "Menunjukkan kelas sosial yang lebih tinggi",
+      "D": "Memudahkan perdagangan internasional",
+      "E": "Menjaga kemurnian bahasa dari pengaruh asing"
+    },
+    "answer": "A",
+    "explanation": "Bahasa Indonesia sebagai bahasa negara berfungsi sebagai alat pemersatu bangsa yang plural, bukan untuk menghapus bahasa daerah."
+  },
+  {
+    "question": "Penggunaan bahasa daerah di Indonesia diatur agar...",
+    "options": {
+      "A": "Dihapuskan dalam waktu dekat",
+      "B": "Dilestarikan sebagai warisan budaya",
+      "C": "Diganti dengan bahasa asing",
+      "D": "Dibatasi penggunaannya",
+      "E": "Menjadi bahasa nasional baru"
+    },
+    "answer": "B",
+    "explanation": "Bahasa daerah dilestarikan dan dikembangkan sesuai UU Bahasa Nasional, sebagai warisan budaya tak benda yang perlu dilindungi."
+  },
+  {
+    "question": "Sikap yang tepat terhadap keberagaman bahasa di Indonesia adalah...",
+    "options": {
+      "A": "Menggunakan hanya bahasa Indonesia dan melupakan bahasa daerah",
+      "B": "Menghargai bahasa daerah sambil menguasai bahasa Indonesia",
+      "C": "Mengutamakan bahasa asing internasional",
+      "D": "Memilih satu bahasa daerah sebagai dominan",
+      "E": "Mengisolasi masyarakat pengguna bahasa tertentu"
+    },
+    "answer": "B",
+    "explanation": "Menghargai keberagaman bahasa daerah sebagai identitas lokal sambil menguasai bahasa Indonesia sebagai bahasa persatuan."
+  },
+  {
+    "question": "Bahasa Indonesia menjadi bahasa internasional (di UNESCO) karena...",
+    "options": {
+      "A": "Jumlah penutur terbanyak di dunia",
+      "B": "Perkembangan dan peran aktif dalam forum internasional",
+      "C": "Paksaan dari negara maju",
+      "D": "Dominasi ekonomi Indonesia",
+      "E": "Kolonialisme masa lalu"
+    },
+    "answer": "B",
+    "explanation": "Bahasa Indonesia diakui UNESCO karena perkembangan pesat dan peran aktif Indonesia dalam forum internasional."
+  },
+  {
+    "question": "Pelestarian bahasa daerah penting untuk...",
+    "options": {
+      "A": "Menghalangi komunikasi antardaerah",
+      "B": "Mempertahankan identitas budaya lokal",
+      "C": "Memecah belah persatuan bangsa",
+      "D": "Menggantikan bahasa Indonesia",
+      "E": "Menciptakan diskriminasi regional"
+    },
+    "answer": "B",
+    "explanation": "Bahasa daerah adalah identitas budaya lokal yang perlu dilestarikan sebagai bagian dari kekayaan budaya nasional."
+  },
+  {
+    "question": "Dalam konteks globalisasi, sikap yang tepat terhadap bahasa Indonesia adalah...",
+    "options": {
+      "A": "Menggantinya dengan bahasa asing",
+      "B": "Menguatkan kemampuan bahasa asing tanpa mengorbankan bahasa Indonesia",
+      "C": "Melarang penggunaan bahasa asing",
+      "D": "Mengabaikan pengembangan bahasa Indonesia",
+      "E": "Memisahkan pengguna bahasa Indonesia dan asing"
+    },
+    "answer": "B",
+    "explanation": "Menguasai bahasa asing untuk globalisasi sambil tetap menguasai dan mencintai bahasa Indonesia sebagai identitas nasional."
+  }
+]

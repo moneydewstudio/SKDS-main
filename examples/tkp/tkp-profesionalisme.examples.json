@@ -1,0 +1,74 @@
+[
+  {
+    "question": "Anda menemukan kesalahan data signifikan setelah laporan diserahkan ke atasan. Tindakan terbaik adalah...",
+    "options": {
+      "A": "Mengabaikan karena sudah diserahkan",
+      "B": "Segera melapor dan koreksi dengan solusi",
+      "C": "Menunggu atasan menemukan sendiri",
+      "D": "Menyalahkan tim untuk mengalihkan fokus",
+      "E": "Mengubah data tanpa memberitahu siapa pun"
+    },
+    "answer": "B",
+    "explanation": "A (1 poin): Tidak bertanggung jawab. B (5 poin): Proaktif, accountable, solusi-oriented. C (2 poin): Reaktif. D (1 poin): Menyalahkan. E (1 poin): Tidak etis."
+  },
+  {
+    "question": "Deadline proyek sangat ketat tapi kualitas terancam. Anda akan...",
+    "options": {
+      "A": "Kejar deadline dan serahkan apa adanya",
+      "B": "Negosiasi deadline atau scope dengan atasan",
+      "C": "Tunda-tunda sampai kualitas sempurna",
+      "D": "Kerjakan sendiri lembur tanpa bantuan",
+      "E": "Kompromi kualitas tanpa komunikasi"
+    },
+    "answer": "B",
+    "explanation": "A (2 poin): Kualitas rendah. B (5 poin): Profesional, manage expectation, quality aware. C (2 poin): Tidak time-conscious. D (3 poin): Burnout risk. E (1 poin): Tidak komunikatif."
+  },
+  {
+    "question": "Seorang klien menawarkan suap untuk mempercepat proses yang seharusnya fair. Sikap Anda adalah...",
+    "options": {
+      "A": "Terima dengan diam-diam demi efisiensi",
+      "B": "Tolak tegas dan jelaskan prosedur fair",
+      "C": "Terima tapi laporkan ke atasan nanti",
+      "D": "Abaikan saja tanpa penolakan",
+      "E": "Mint lebih banyak suap"
+    },
+    "answer": "B",
+    "explanation": "A (1 poin): Korup. B (5 poin): Integritas tinggi, profesional, clear boundary. C (2 poin): Masih terima suap. D (2 poin): Ambigu. E (1 poin): Korup berat."
+  },
+  {
+    "question": "Anda menemukan rekan melanggar prosedur untuk hasil cepat. Tindakan Anda adalah...",
+    "options": {
+      "A": "Ikut melanggar karena efisien",
+      "B": "Ingatkan prosedur dan dokumentasikan",
+      "C": "Abaikan karena tidak merugikan langsung",
+      "D": "Laporkan ke atasan tanpa konfirmasi",
+      "E": "Puji hasilnya tanpa peduli proses"
+    },
+    "answer": "B",
+    "explanation": "A (1 poin): Melanggar. B (5 poin): Profesional, integrity, membangun awareness. C (2 poin): Toleransi pelanggaran. D (3 poin): Prematur. E (2 poin): Rewarding violation."
+  },
+  {
+    "question": "Anda memiliki info penting yang bisa untungkan pihak luar. Bukan rahasia tapi belum publik. Anda akan...",
+    "options": {
+      "A": "Manfaatkan untuk keuntungan pribadi",
+      "B": "Jaga kerahasiaan sampai info resmi",
+      "C": "Bocorkan ke teman dekat saja",
+      "D": "Posting di media sosial",
+      "E": "Jual ke pihak luar"
+    },
+    "answer": "B",
+    "explanation": "A (1 poin): Insider trading. B (5 poin): Profesionalisme, confidentiality, integrity. C (2 poin): Selective leak. D (1 poin): Public leak. E (1 poin): Korup."
+  },
+  {
+    "question": "Di meeting, atasan mengusulkan ide yang menurut Anda tidak efektif. Tindakan terbaik adalah...",
+    "options": {
+      "A": "Kritik langsung di depan semua orang",
+      "B": "Setuju saja untuk aman",
+      "C": "Sampaikan concern privat dengan data pendukung",
+      "D": "Abaikan dan biarkan gagal",
+      "E": "Sebarkan ke rekan bahwa ide buruk"
+    },
+    "answer": "C",
+    "explanation": "A (2 poin): Memalukan. B (2 poin): Yes-man. C (5 poin): Profesional, respectful, constructive. D (1 poin): Sabotase. E (1 poin): Gossip."
+  }
+]

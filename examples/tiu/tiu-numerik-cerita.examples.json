@@ -1,0 +1,74 @@
+[
+  {
+    "question": "Sebuah proyek bisa diselesaikan oleh 12 pekerja dalam 20 hari. Setelah 8 hari bekerja, proyek dihentikan 4 hari karena hujan. Agar proyek tetap selesai tepat waktu, berapa pekerja tambahan yang diperlukan?",
+    "options": {
+      "A": "4 pekerja",
+      "B": "6 pekerja",
+      "C": "8 pekerja",
+      "D": "10 pekerja",
+      "E": "12 pekerja"
+    },
+    "answer": "B",
+    "explanation": "Total pekerjaan = 12 × 20 = 240 pekerja-hari. Selesai 8 hari = 96 pekerja-hari. Sisa = 144 pekerja-hari. Sisa waktu = 20 - 8 - 4 = 8 hari. Pekerja yang diperlukan = 144 ÷ 8 = 18. Tambahan = 18 - 12 = 6 pekerja."
+  },
+  {
+    "question": "Seorang pedagang membeli 2 kantong gula masing-masing 5 kg dengan harga Rp 50.000 per kantong. Jika ia ingin untung 20%, berapa harga jual per kg?",
+    "options": {
+      "A": "Rp 10.000",
+      "B": "Rp 11.000",
+      "C": "Rp 12.000",
+      "D": "Rp 12.500",
+      "E": "Rp 13.000"
+    },
+    "answer": "C",
+    "explanation": "Total beli: 2 × Rp 50.000 = Rp 100.000. Total kg: 10 kg. Harga beli per kg: Rp 10.000. Untung 20%: Rp 10.000 × 1.2 = Rp 12.000 per kg."
+  },
+  {
+    "question": "Kota A dan B berjarak 360 km. Bus berangkat dari A pukul 06.00 dengan kecepatan 60 km/jam. Bus lain berangkat dari B pukul 07.00 dengan kecepatan 40 km/jam. Jam berapa mereka bertemu?",
+    "options": {
+      "A": "09.00",
+      "B": "09.30",
+      "C": "10.00",
+      "D": "10.30",
+      "E": "11.00"
+    },
+    "answer": "C",
+    "explanation": "Pada jam 07.00, bus dari A sudah jalan 60 km. Sisa jarak = 300 km. Kecepatan mendekat = 60 + 40 = 100 km/jam. Waktu bertemu = 300 ÷ 100 = 3 jam setelah 07.00 = 10.00."
+  },
+  {
+    "question": "Sebuah kolam memiliki 3 pipa. Pipa A mengisi penuh dalam 6 jam, pipa B dalam 8 jam, pipa C mengosongkan dalam 12 jam. Jika ketiganya dibuka bersamaan, berapa jam untuk mengisi kolam kosong?",
+    "options": {
+      "A": "4 jam",
+      "B": "4,8 jam",
+      "C": "5 jam",
+      "D": "5,5 jam",
+      "E": "6 jam"
+    },
+    "answer": "B",
+    "explanation": "Kapasitas per jam: A = 1/6, B = 1/8, C = -1/12. Total = 4/24 + 3/24 - 2/24 = 5/24. Waktu = 24/5 = 4.8 jam."
+  },
+  {
+    "question": "Usia Ayah sekarang 4 kali usia Anak. 6 tahun lalu, usia Ayah 7 kali usia Anak. Berapa usia Anak sekarang?",
+    "options": {
+      "A": "8 tahun",
+      "B": "9 tahun",
+      "C": "10 tahun",
+      "D": "12 tahun",
+      "E": "14 tahun"
+    },
+    "answer": "C",
+    "explanation": "Misal usia Anak = x. Ayah = 4x. 6 tahun lalu: 4x - 6 = 7(x - 6). 4x - 6 = 7x - 42. 36 = 3x. x = 12."
+  },
+  {
+    "question": "Seorang pegawai mendapat gaji pokok Rp 3.000.000 dan komisi 5% dari penjualan di atas Rp 10.000.000. Jika bulan ini penjualannya Rp 25.000.000, berapa total gajinya?",
+    "options": {
+      "A": "Rp 3.500.000",
+      "B": "Rp 3.600.000",
+      "C": "Rp 3.750.000",
+      "D": "Rp 4.000.000",
+      "E": "Rp 4.250.000"
+    },
+    "answer": "C",
+    "explanation": "Penjualan di atas 10 juta = 25 - 10 = 15 juta. Komisi = 5% × 15 juta = 0.75 juta = Rp 750.000. Total gaji = 3.000.000 + 750.000 = Rp 3.750.000."
+  }
+]

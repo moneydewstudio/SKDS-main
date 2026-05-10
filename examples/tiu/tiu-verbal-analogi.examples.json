@@ -1,0 +1,74 @@
+[
+  {
+    "question": "Burung : Udara = Ikan : ?",
+    "options": {
+      "A": "Air",
+      "B": "Laut",
+      "C": "Renang",
+      "D": "Kolam",
+      "E": "Sisik"
+    },
+    "answer": "A",
+    "explanation": "Hubungan: habitat tempat hidup/mati. Burung hidup di udara (tidak bisa hidup tanpa udara), maka ikan hidup di air (tidak bisa hidup tanpa air)."
+  },
+  {
+    "question": "Kacamata : Rabun = Telinga : ?",
+    "options": {
+      "A": "Lihat",
+      "B": "Bisu",
+      "C": "Tuli",
+      "D": "Bicara",
+      "E": "Sakit"
+    },
+    "answer": "C",
+    "explanation": "Hubungan: alat untuk mengatasi kelainan. Kacamata untuk mengatasi rabun (mata), alat bantu dengar untuk mengatasi tuli (tuli)."
+  },
+  {
+    "question": "Guru : Sekolah = Dokter : ?",
+    "options": {
+      "A": "Rumah",
+      "B": "Rumah Sakit",
+      "C": "Klinik",
+      "D": "Pasien",
+      "E": "Obat"
+    },
+    "answer": "B",
+    "explanation": "Hubungan: tempat kerja. Guru bekerja di sekolah, dokter bekerja di rumah sakit."
+  },
+  {
+    "question": "Padi : Nasi = Susu : ?",
+    "options": {
+      "A": "Sapi",
+      "B": "Yogurt",
+      "C": "Keju",
+      "D": "Minuman",
+      "E": "Putih"
+    },
+    "answer": "C",
+    "explanation": "Hubungan: hasil olahan mentah menjadi matang yang dikonsumsi. Padi (mentah) diolah menjadi nasi (matang), susu (mentah) diolah menjadi keju (matang olahan)."
+  },
+  {
+    "question": "Kepala : Topi = Kaki : ?",
+    "options": {
+      "A": "Badan",
+      "B": "Sepatu",
+      "C": "Lari",
+      "D": "Tanah",
+      "E": "Jalan"
+    },
+    "answer": "B",
+    "explanation": "Hubungan: pelindung/bagian yang dikenakan. Topi melindungi kepala, sepatu melindungi kaki."
+  },
+  {
+    "question": "Marah : Merah = Bersih : ?",
+    "options": {
+      "A": "Putih",
+      "B": "Biru",
+      "C": "Hijau",
+      "D": "Kuning",
+      "E": "Hitam"
+    },
+    "answer": "A",
+    "explanation": "Hubungan: asosiasi warna dengan konsep. Merah diasosiasikan dengan kemarahan, putih diasosiasikan dengan kebersihan/kesucian."
+  }
+]

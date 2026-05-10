@@ -1,0 +1,74 @@
+[
+  {
+    "question": "Semboyan 'Bhinneka Tunggal Ika' berasal dari kitab...",
+    "options": {
+      "A": "Ramayana",
+      "B": "Mahabharata",
+      "C": "Sutasoma",
+      "D": "Arjuna Wiwaha",
+      "E": "Negarakertagama"
+    },
+    "answer": "C",
+    "explanation": "Bhinneka Tunggal Ika diambil dari Kakawin Sutasoma karangan Mpu Tantular zaman Majapahit."
+  },
+  {
+    "question": "Seorang ASN menolak berkerja sama dengan rekan dari suku lain karena prasangka negatif. Sikap ini bertentangan dengan semangat...",
+    "options": {
+      "A": "Bela Negara",
+      "B": "Bhinneka Tunggal Ika",
+      "C": "Nasionalisme",
+      "D": "Pancasila sebagai ideologi",
+      "E": "UUD 1945"
+    },
+    "answer": "B",
+    "explanation": "Bhinneka Tunggal Ika mengajarkan bersatu dalam perbedaan. Menolak kerja sama karena suku adalah pelanggaran semangat Bhinneka Tunggal Ika."
+  },
+  {
+    "question": "Toleransi antarumat beragama di Indonesia didasarkan pada sila...",
+    "options": {
+      "A": "Sila pertama",
+      "B": "Sila kedua",
+      "C": "Sila ketiga",
+      "D": "Sila keempat",
+      "E": "Sila kelima"
+    },
+    "answer": "A",
+    "explanation": "Sila pertama: Ketuhanan Yang Maha Esa mengandung pengakuan terhadap keberagaman cara beragama, dengan tetap menjaga kerukunan."
+  },
+  {
+    "question": "Pengakuan terhadap adat istiadat berbagai daerah sebagai bagian dari budaya nasional mencerminkan nilai...",
+    "options": {
+      "A": "Asimilasi",
+      "B": "Integrasi",
+      "C": "Akulturasi",
+      "D": "Bhinneka Tunggal Ika",
+      "E": "Sentralisasi"
+    },
+    "answer": "D",
+    "explanation": "Bhinneka Tunggal Ika mengakui dan menghargai keberagaman adat istiadat sebagai kekayaan budaya bangsa."
+  },
+  {
+    "question": "Sikap menghargai perbedaan bahasa daerah dalam konteks kebangsaan Indonesia mencerminkan...",
+    "options": {
+      "A": "Pemisahan etnis",
+      "B": "Diskriminasi regional",
+      "C": "Semangat Bhinneka Tunggal Ika",
+      "D": "Isolasi budaya",
+      "E": "Superioritas bahasa"
+    },
+    "answer": "C",
+    "explanation": "Menghargai perbedaan bahasa daerah sambil menggunakan bahasa Indonesia sebagai bahasa persatuan adalah implementasi Bhinneka Tunggal Ika."
+  },
+  {
+    "question": "Keberagaman suku, agama, ras, dan antargolongan (SARA) di Indonesia harus disikapi dengan...",
+    "options": {
+      "A": "Dihomogenisasi menjadi satu identitas",
+      "B": "Diabaikan demi keseragaman",
+      "C": "Dihargai dan dijaga dalam persatuan",
+      "D": "Dipisahkan dalam wilayah masing-masing",
+      "E": "Dihapuskan untuk menghindari konflik"
+    },
+    "answer": "C",
+    "explanation": "Keberagaman SARA adalah anugerah yang harus disyukuri, dihargai, dan dijaga keharmonisannya dalam bingkai persatuan Indonesia."
+  }
+]

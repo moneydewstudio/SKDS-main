@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Diketahui pernyataan: 'Jika hujan turun, maka jalan basah'. Pernyataan ini EQUIVALEN dengan...",
+    "options": {
+      "A": "Jalan tidak basah atau hujan turun",
+      "B": "Jika jalan basah, maka hujan turun",
+      "C": "Hujan tidak turun dan jalan basah",
+      "D": "Jika jalan tidak basah, maka hujan tidak turun",
+      "E": "Hujan turun dan jalan tidak basah"
+    },
+    "answer": "D",
+    "explanation": "p → q ekuivalen dengan ¬q → ¬p (kontraposisi). Jadi 'Jika jalan tidak basah, maka hujan tidak turun'. Pengecoh A adalah konvers, B adalah invers."
+  },
+  {
+    "question": "Jika p → q bernilai salah, maka pernyataan yang benar adalah...",
+    "options": {
+      "A": "p benar dan q benar",
+      "B": "p benar dan q salah",
+      "C": "p salah dan q benar",
+      "D": "p salah dan q salah",
+      "E": "p dan q tidak dapat ditentukan"
+    },
+    "answer": "B",
+    "explanation": "Implikasi p → q hanya salah ketika p benar (anteseden) dan q salah (konsekuen). Dalam semua kasus lain, implikasi bernilai benar."
+  },
+  {
+    "question": "Diberikan: 1) Semua A adalah B, 2) Semua B adalah C. Kesimpulan yang sah adalah...",
+    "options": {
+      "A": "Semua C adalah A",
+      "B": "Semua A adalah C",
+      "C": "Beberapa B bukan A",
+      "D": "Semua C adalah B",
+      "E": "Tidak ada kesimpulan yang sah"
+    },
+    "answer": "B",
+    "explanation": "Ini adalah silogisme Barbara (AAA-1). Dari A → B dan B → C, maka A → C (Semua A adalah C). Pengecoh A dan D membalikkan hubungan."
+  },
+  {
+    "question": "Negasi dari pernyataan 'Semua mahasiswa rajin belajar' adalah...",
+    "options": {
+      "A": "Semua mahasiswa tidak rajin belajar",
+      "B": "Tidak semua mahasiswa rajin belajar",
+      "C": "Ada mahasiswa yang rajin belajar",
+      "D": "Tidak ada mahasiswa yang rajin belajar",
+      "E": "Semua mahasiswa malas belajar"
+    },
+    "answer": "B",
+    "explanation": "Negasi dari 'Semua P adalah Q' adalah 'Ada P yang bukan Q' atau 'Tidak semua P adalah Q'. Ini adalah aturan negasi kuantor universal."
+  },
+  {
+    "question": "Jika x + y = 10 dan x - y = 4, maka nilai x² - y² adalah...",
+    "options": {
+      "A": "20",
+      "B": "30",
+      "C": "40",
+      "D": "50",
+      "E": "60"
+    },
+    "answer": "C",
+    "explanation": "x² - y² = (x+y)(x-y) = 10 × 4 = 40. Ini menggunakan identitas selisih kuadrat tanpa perlu mencari x dan y secara terpisah."
+  }
+]

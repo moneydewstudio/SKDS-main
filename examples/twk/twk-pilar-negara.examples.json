@@ -1,0 +1,74 @@
+[
+  {
+    "question": "Pilar negara yang menjamin kesetaraan dan keadilan sosial adalah...",
+    "options": {
+      "A": "Pancasila dan UUD 1945",
+      "B": "Pancasila dan NKRI",
+      "C": "UUD 1945 dan Bhinneka Tunggal Ika",
+      "D": "NKRI dan Bhinneka Tunggal Ika",
+      "E": "Keempat pilar secara simultan"
+    },
+    "answer": "E",
+    "explanation": "Keempat pilar (Pancasila, UUD 1945, NKRI, Bhinneka Tunggal Ika) saling terkait dan mendukung terciptanya keadilan sosial."
+  },
+  {
+    "question": "Penerapan otonomi daerah yang berlebihan hingga mengabaikan kepentingan nasional melanggar sinergi antara pilar...",
+    "options": {
+      "A": "Pancasila dan NKRI",
+      "B": "UUD 1945 dan Bhinneka Tunggal Ika saja",
+      "C": "NKRI dan Bhinneka Tunggal Ika saja",
+      "D": "Keempat pilar secara simultan",
+      "E": "Tidak melanggar pilar apapun"
+    },
+    "answer": "D",
+    "explanation": "Otonomi yang mengabaikan kepentingan nasional melanggar semua pilar: Pancasila (sil keadilan), UUD 1945 (sistem pemerintahan), NKRI (kesatuan), Bhinneka (persatuan dalam perbedaan)."
+  },
+  {
+    "question": "Hubungan antara Pancasila dan UUD 1945 adalah...",
+    "options": {
+      "A": "Saling bertentangan",
+      "B": "Tidak ada hubungan",
+      "C": "Pancasila sebagai sumber nilai, UUD 1945 sebagai perwujudan",
+      "D": "UUD 1945 menggantikan Pancasila",
+      "E": "Pancasila sebagai aturan teknis"
+    },
+    "answer": "C",
+    "explanation": "Pancasila sebagai ideologi dan sumber nilai dasar, UUD 1945 sebagai konstitusi yang mewujudkan nilai-nilai Pancasila dalam sistem ketatanegaraan."
+  },
+  {
+    "question": "Penghormatan terhadap simbol negara (bendera, lagu kebangsaan) mencerminkan implementasi pilar...",
+    "options": {
+      "A": "Pancasila",
+      "B": "UUD 1945",
+      "C": "NKRI",
+      "D": "Bhinneka Tunggal Ika",
+      "E": "Semua pilar"
+    },
+    "answer": "E",
+    "explanation": "Menghormati simbol negara adalah implementasi keempat pilar: cinta tanah air, taat konstitusi, kesadaran bernegara, dan persatuan."
+  },
+  {
+    "question": "Korupsi di kalangan pejabat melanggar nilai-nilai...",
+    "options": {
+      "A": "Pancasila sila pertama",
+      "B": "Keempat pilar negara",
+      "C": "UUD 1945 Pasal 1",
+      "D": "NKRI saja",
+      "E": "Bhinneka Tunggal Ika"
+    },
+    "answer": "B",
+    "explanation": "Korupsi melanggar keempat pilar: melanggar moral Pancasila, hukum UUD 1945, merusak NKRI, dan memecah belah persatuan."
+  },
+  {
+    "question": "Pendidikan karakter berbasis Pancasila di sekolah bertujuan menanamkan...",
+    "options": {
+      "A": "Kebencian terhadap asing",
+      "B": "Pemahaman dan pengamalan nilai-nilai pilar negara",
+      "C": "Ketergantungan pada pemerintah",
+      "D": "Isolasi dari budaya global",
+      "E": "Superioritas bangsa Indonesia"
+    },
+    "answer": "B",
+    "explanation": "Pendidikan karakter berbasis Pancasila menanamkan pemahaman dan pengamalan nilai-nilai keempat pilar negara sejak dini."
+  }
+]

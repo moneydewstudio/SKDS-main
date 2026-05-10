@@ -1,0 +1,74 @@
+[
+  {
+    "question": "Anda menemukan invoice fiktif yang disetujui atasan. Tindakan Anda adalah...",
+    "options": {
+      "A": "Diam saja karena sudah disetujui atasan",
+      "B": "Dokumentasikan dan laporkan ke unit pengawasan internal",
+      "C": "Ikut setujui untuk aman",
+      "D": "Konfrontasi atasan secara terbuka",
+      "E": "Manfaatkan celah untuk keuntungan pribadi"
+    },
+    "answer": "B",
+    "explanation": "A (2 poin): Complicit. B (5 poin): Whistleblowing tepat, melawan korupsi. C (1 poin): Korup. D (2 poin): Confrontasi berisiko. E (1 poin): Korup aktif."
+  },
+  {
+    "question": "Rekan menawarkan 'komisi' untuk mengutamakan vendornya. Sikap Anda adalah...",
+    "options": {
+      "A": "Terima jika tidak ketahuan",
+      "B": "Tolak dan pilih vendor berdasarkan merit",
+      "C": "Terima dan bagi dengan tim",
+      "D": "Tolak tapi pilih vendornya untuk baikan",
+      "E": "Negosiasi komisi lebih tinggi"
+    },
+    "answer": "B",
+    "explanation": "A (1 poin): Korup. B (5 poin): Integrity, fair, merit-based. C (1 poin): Korup kolusi. D (2 poin): Nepotisme. E (1 poin): Korup aktif."
+  },
+  {
+    "question": "Anda memiliki wewenang pengadaan dan kerabat meminta prioritas. Tindakan Anda adalah...",
+    "options": {
+      "A": "Prioritaskan karena keluarga",
+      "B": "Tolak dan terapkan prosedur fair",
+      "C": "Prioritaskan dengan harga lebih tinggi",
+      "D": "Abaikan permintaan tanpa penjelasan",
+      "E": "Tunda-tunda sampai kerabat marah"
+    },
+    "answer": "B",
+    "explanation": "A (1 poin): Nepotisme. B (5 poin): Integrity, fair process, no conflict of interest. C (1 poin): Nepotisme + markup. D (2 poin): Kurang komunikatif. E (2 poin): Pasif-agresif."
+  },
+  {
+    "question": "Laporan kinerja Anda diminta diubah untuk lebih bagus. Tindakan Anda adalah...",
+    "options": {
+      "A": "Setuju karena menguntungkan karier",
+      "B": "Tolak dan pertahankan data akurat",
+      "C": "Setuju dengan syarat komisi",
+      "D": "Abaikan permintaan",
+      "E": "Ubahlah sendiri tanpa diminta"
+    },
+    "answer": "B",
+    "explanation": "A (1 poin): Falsification. B (5 poin): Integrity, honest, accurate. C (1 poin): Fraud + corruption. D (2 poin): Ambigu. E (1 poin): Proactive fraud."
+  },
+  {
+    "question": "Anda salah input data yang menguntungkan pihak tertentu. Sebelum diketahui, Anda akan...",
+    "options": {
+      "A": "Biarkan saja",
+      "B": "Lapor dan koreksi segera",
+      "C": "Manfaatkan kesalahan",
+      "D": "Salahkan sistem",
+      "E": "Tutupi dengan data salah lain"
+    },
+    "answer": "B",
+    "explanation": "A (1 poin): Unethical. B (5 poin): Integrity, admit mistake, correct. C (1 poin): Exploitation. D (1 poin): Blame shifting. E (1 poin): Cover-up."
+  },
+  {
+    "question": "Anda diminta mengutamakan kandidat dari partai politik tertentu dalam rekrutmen. Sikap Anda adalah...",
+    "options": {
+      "A": "Ikuti karena tekanan politik",
+      "B": "Tolak dan pertahankan merit-based selection",
+      "C": "Ikuti dengan imbalan",
+      "D": "Delay proses sampai tekanan hilang",
+      "E": "Seleksi dengan bias partai"
+    },
+    "answer": "B",
+    "explanation": "A (2 poin): Politik praktis. B (5 poin): Integrity, neutral, merit-based. C (1 poin): Corrupt politics. D (2 poin): Avoidance. E (1 poin): Partisan recruitment."
+  }
+]

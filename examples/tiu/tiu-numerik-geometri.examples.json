@@ -1,0 +1,74 @@
+[
+  {
+    "question": "Sebuah persegi panjang memiliki panjang 12 cm dan lebar 8 cm. Berapa keliling persegi panjang tersebut?",
+    "options": {
+      "A": "20 cm",
+      "B": "32 cm",
+      "C": "40 cm",
+      "D": "48 cm",
+      "E": "96 cm"
+    },
+    "answer": "C",
+    "explanation": "Keliling = 2(p + l) = 2(12 + 8) = 2 × 20 = 40 cm."
+  },
+  {
+    "question": "Luas sebuah lingkaran dengan diameter 14 cm adalah... (π = 22/7)",
+    "options": {
+      "A": "44 cm²",
+      "B": "88 cm²",
+      "C": "154 cm²",
+      "D": "308 cm²",
+      "E": "616 cm²"
+    },
+    "answer": "C",
+    "explanation": "r = 14/2 = 7 cm. Luas = π × r² = 22/7 × 7 × 7 = 22 × 7 = 154 cm²."
+  },
+  {
+    "question": "Sebuah segitiga memiliki alas 10 cm dan tinggi 8 cm. Berapa luas segitiga tersebut?",
+    "options": {
+      "A": "20 cm²",
+      "B": "40 cm²",
+      "C": "48 cm²",
+      "D": "80 cm²",
+      "E": "160 cm²"
+    },
+    "answer": "B",
+    "explanation": "Luas = ½ × alas × tinggi = ½ × 10 × 8 = 5 × 8 = 40 cm²."
+  },
+  {
+    "question": "Sebuah kubus memiliki panjang rusuk 6 cm. Berapa volume kubus tersebut?",
+    "options": {
+      "A": "36 cm³",
+      "B": "72 cm³",
+      "C": "144 cm³",
+      "D": "216 cm³",
+      "E": "432 cm³"
+    },
+    "answer": "D",
+    "explanation": "Volume = s³ = 6 × 6 × 6 = 216 cm³."
+  },
+  {
+    "question": "Sebuah balok memiliki panjang 8 cm, lebar 5 cm, dan tinggi 4 cm. Berapa luas permukaan balok tersebut?",
+    "options": {
+      "A": "120 cm²",
+      "B": "160 cm²",
+      "C": "184 cm²",
+      "D": "200 cm²",
+      "E": "240 cm²"
+    },
+    "answer": "C",
+    "explanation": "Luas permukaan = 2(pl + pt + lt) = 2(8×5 + 8×4 + 5×4) = 2(40 + 32 + 20) = 2 × 92 = 184 cm²."
+  },
+  {
+    "question": "Sebuah taman berbentuk persegi panjang dengan panjang 20 m dan lebar 12 m. Di sekeliling taman akan dipasang tiang lampu dengan jarak 4 m. Berapa banyak tiang lampu yang diperlukan?",
+    "options": {
+      "A": "14 tiang",
+      "B": "16 tiang",
+      "C": "18 tiang",
+      "D": "20 tiang",
+      "E": "32 tiang"
+    },
+    "answer": "B",
+    "explanation": "Keliling = 2(20 + 12) = 64 m. Jumlah tiang = 64 ÷ 4 = 16 tiang."
+  }
+]

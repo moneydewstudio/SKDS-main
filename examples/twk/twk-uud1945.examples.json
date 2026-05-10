@@ -1,0 +1,74 @@
+[
+  {
+    "question": "Menurut UUD 1945 Pasal 1, Negara Indonesia adalah negara kesatuan yang berbentuk...",
+    "options": {
+      "A": "Federasi",
+      "B": "Republik",
+      "C": "Monarki",
+      "D": "Kesultanan",
+      "E": "Uni"
+    },
+    "answer": "B",
+    "explanation": "Pasal 1 Ayat 1 UUD 1945: 'Negara Indonesia ialah negara kesatuan, yang berbentuk republik.'"
+  },
+  {
+    "question": "Kedaulatan rakyat dilaksanakan sepenuhnya oleh Majelis Permusyawaratan Rakyat sesuai dengan UUD 1945 Pasal...",
+    "options": {
+      "A": "Pasal 1",
+      "B": "Pasal 2",
+      "C": "Pasal 3",
+      "D": "Pasal 4",
+      "E": "Pasal 5"
+    },
+    "answer": "B",
+    "explanation": "Pasal 2 UUD 1945: 'Kedaulatan adalah di tangan rakyat, dan dilaksanakan sepenuhnya oleh Majelis Permusyawaratan Rakyat.'"
+  },
+  {
+    "question": "Presiden dan Wakil Presiden memegang jabatan selama...",
+    "options": {
+      "A": "3 tahun",
+      "B": "4 tahun",
+      "C": "5 tahun",
+      "D": "6 tahun",
+      "E": "7 tahun"
+    },
+    "answer": "C",
+    "explanation": "Pasal 7 UUD 1945: 'Presiden dan Wakil Presiden memegang jabatan selama lima tahun, dan sesudahnya boleh dipilih kembali untuk satu kali jabatan.'"
+  },
+  {
+    "question": "Komisi Yudisial dibentuk berdasarkan UUD 1945 Pasal 24B dengan tugas utama...",
+    "options": {
+      "A": "Mengadili perkara pidana",
+      "B": "Mengawasi perilaku hakim",
+      "C": "Membuat undang-undang",
+      "D": "Memerintah negara",
+      "E": "Mengatur pemilu"
+    },
+    "answer": "B",
+    "explanation": "Pasal 24B UUD 1945: Komisi Yudisial berwenang mengusulkan pengangkatan hakim agung dan memiliki wewenang lain dalam rangka pengawasan perilaku hakim."
+  },
+  {
+    "question": "Pemerintah daerah provinsi, kabupaten, dan kota mengatur dan mengurus sendiri urusan pemerintahan menurut asas...",
+    "options": {
+      "A": "Sentralisasi",
+      "B": "Desentralisasi",
+      "C": "Delegasi",
+      "D": "Otonomi",
+      "E": "Federasi"
+    },
+    "answer": "B",
+    "explanation": "Pasal 18 UUD 1945: Pemerintahan daerah menjalankan otonomi seluas-luasnya dengan asas desentralisasi."
+  },
+  {
+    "question": "Setiap warga negara berhak mendapatkan pendidikan sesuai UUD 1945 Pasal...",
+    "options": {
+      "A": "Pasal 28A",
+      "B": "Pasal 28B",
+      "C": "Pasal 28C",
+      "D": "Pasal 28D",
+      "E": "Pasal 31"
+    },
+    "answer": "E",
+    "explanation": "Pasal 31 Ayat 1 UUD 1945: 'Setiap warga negara berhak mendapat pendidikan.'"
+  }
+]

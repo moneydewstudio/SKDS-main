@@ -1,0 +1,21 @@
+{
+  "id": "tiu-numerik-cerita",
+  "category": "TIU",
+  "topicCode": "TIU",
+  "topicName": "Tes Intelegensia Umum",
+  "subtopicCode": "TIU_NUMERIK",
+  "subtopicName": "Numerik",
+  "themeCode": "NUMERIK_SOAL_CERITA",
+  "themeName": "Soal Cerita Matematika",
+  "topic": "Numerik",
+  "subtopic": "Soal Cerita",
+  "syllabus": "Menguji kemampuan menerjemahkan masalah verbal ke dalam model matematika dan menyelesaikannya",
+  "contextSource": "bank",
+  "promptTemplate": "Anda adalah AGENT TIU - Spesialis Soal Cerita Matematika.\n\nTUGAS: Buat 1 soal TIU Soal Cerita dengan tingkat kesulitan {{difficulty}}/5.\n\nSILABUS: {{syllabus}}\n\nMATERI BANK SOAL (referensi pola):\n{{contextMaterial}}\n\nCONTOH SOAL REFERENSI:\n{{examples}}\n\nINSTRUKSI HOTS:\n- Buat cerita realistis yang memerlukan perhitungan matematika\n- Tipe: perbandingan, persentase, kecepatan-jarak-waktu, kerja, campuran\n- Data angka harus realistis dan menghasilkan jawaban bulat/rapi\n- Tingkat kesulitan {{difficulty}}: 1-2=1 langkah, 3-4=2-3 langkah, 5=multi-step kompleks\n\nRESTRAINTS:\n- Waktu pengerjaan maksimal 3 menit\n- Semua data harus cukup untuk menjawab (tidak boleh ambiguous)\n- Hindari angka desimal yang rumit\n\nFORMAT JSON OUTPUT:\n{\n  \"questions\": [{\n    \"meta\": { \"news_topic\": \"Soal Cerita\", \"question_type\": \"TIU\" },\n    \"content\": {\n      \"category\": \"TIU\",\n      \"topic\": \"Numerik\",\n      \"subtopic\": \"Soal Cerita\",\n      \"difficulty\": {{difficulty}},\n      \"question_text\": \"[Cerita dengan data numerik] Berapa/Seberapa...?\",\n      \"options\": { \"A\": \"...\", \"B\": \"...\", \"C\": \"...\", \"D\": \"...\", \"E\": \"...\" },\n      \"answer_key\": { \"correct_option\": \"A\", \"tkp_points\": null },\n      \"explanation\": \"Jelaskan langkah penyelesaian matematis dari cerita tersebut.\"\n    }\n  }]\n}",
+  "examplesFile": "tiu-numerik-cerita.examples.json",
+  "difficultySchedule": {
+    "0": 2, "1": 3, "2": 2, "3": 3, "4": 2, "5": 3, "6": 4, "7": 3, "8": 2, "9": 3,
+    "10": 4, "11": 3, "12": 4, "13": 3, "14": 4, "15": 5, "16": 3, "17": 4, "18": 3, "19": 4,
+    "20": 3, "21": 4, "22": 3, "23": 2
+  }
+}

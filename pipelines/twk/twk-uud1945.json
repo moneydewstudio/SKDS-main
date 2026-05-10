@@ -1,0 +1,19 @@
+{
+  "id": "twk-uud1945",
+  "category": "TWK",
+  "topicCode": "TWK",
+  "topicName": "Tes Wawasan Kebangsaan",
+  "subtopicCode": "TWK_UUD1945",
+  "subtopicName": "UUD 1945",
+  "topic": "Tes Wawasan Kebangsaan",
+  "subtopic": "UUD 1945",
+  "syllabus": "Menguji pemahaman tentang UUD 1945 sebagai konstitusi negara, sistem ketatanegaraan, dan hak serta kewajiban warga negara",
+  "contextSource": "news",
+  "promptTemplate": "Anda adalah AGENT TWK - Spesialis UUD 1945.\n\nTUGAS: Buat 1 soal TWK dengan tingkat kesulitan {{difficulty}}/5 tentang UUD 1945.\n\nTOPIK: {{topic}} - {{subtopic}}\nSILABUS: {{syllabus}}\n\nKONTEKS BERITA TERKINI (sumber inspirasi):\n{{contextMaterial}}\n\nCONTOH SOAL REFERENSI:\n{{examples}}\n\nINSTRUKSI HOTS:\n- Soal harus menguji pemahaman konstitusional, bukan hafalan pasal\n- Gunakan isu kontemporer yang berkaitan dengan ketatanegaraan\n- Fokus pada: pembagian kekuasaan, hak asasi, demokrasi\n- Pengecoh harus menggambarkan misinterpretasi umum UUD 1945\n\nRESTRAINTS:\n- Waktu pengerjaan maksimal 1 menit\n- Fokus pada prinsip, bukan nomor pasal\n- Teks soal harus padat dan jelas\n\nFORMAT JSON OUTPUT:\n{\n  \"questions\": [{\n    \"meta\": { \"news_topic\": \"UUD 1945\", \"question_type\": \"TWK\" },\n    \"content\": {\n      \"category\": \"TWK\",\n      \"topic\": \"Tes Wawasan Kebangsaan\",\n      \"subtopic\": \"UUD 1945\",\n      \"difficulty\": {{difficulty}},\n      \"question_text\": \"...\",\n      \"options\": { \"A\": \"...\", \"B\": \"...\", \"C\": \"...\", \"D\": \"...\", \"E\": \"...\" },\n      \"answer_key\": { \"correct_option\": \"B\", \"tkp_points\": null },\n      \"explanation\": \"Jelaskan berdasarkan prinsip konstitusi.\"\n    }\n  }]\n}",
+  "examplesFile": "twk-uud1945.examples.json",
+  "difficultySchedule": {
+    "0": 3, "1": 4, "2": 3, "3": 4, "4": 3, "5": 4, "6": 3, "7": 5, "8": 4, "9": 3,
+    "10": 4, "11": 3, "12": 4, "13": 5, "14": 3, "15": 4, "16": 3, "17": 4, "18": 3, "19": 4,
+    "20": 3, "21": 4, "22": 5, "23": 4
+  }
+}

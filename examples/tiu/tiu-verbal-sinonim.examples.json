@@ -1,0 +1,74 @@
+[
+  {
+    "question": "Sinonim dari kata 'KONSISTEN' adalah...",
+    "options": {
+      "A": "Tetap",
+      "B": "Berubah",
+      "C": "Ragu",
+      "D": "Bimbang",
+      "E": "Labil"
+    },
+    "answer": "A",
+    "explanation": "Konsisten berarti tetap pada pendirian/prinsip. Sinonimnya adalah 'tetap'. Pengecoh B, C, D, E adalah antonim (lawan kata)."
+  },
+  {
+    "question": "Sinonim dari kata 'KREDIBEL' adalah...",
+    "options": {
+      "A": "Dapat dipercaya",
+      "B": "Ragu-ragu",
+      "C": "Menipu",
+      "D": "Palsu",
+      "E": "Dubius"
+    },
+    "answer": "A",
+    "explanation": "Kredibel (credible) berarti dapat dipercaya, memiliki kredibilitas. Pengecoh B, C, D, E adalah lawan dari dapat dipercaya."
+  },
+  {
+    "question": "Sinonim dari kata 'PROGRESIF' adalah...",
+    "options": {
+      "A": "Maju",
+      "B": "Mundur",
+      "C": "Statis",
+      "D": "Diam",
+      "E": "Terhenti"
+    },
+    "answer": "A",
+    "explanation": "Progresif berarti bergerak maju, berkembang, meningkat. Sinonimnya 'maju'. Pengecoh B, C, D, E adalah antonim."
+  },
+  {
+    "question": "Sinonim dari kata 'KOMPLEKS' adalah...",
+    "options": {
+      "A": "Sederhana",
+      "B": "Rumit",
+      "C": "Mudah",
+      "D": "Simpel",
+      "E": "Ringan"
+    },
+    "answer": "B",
+    "explanation": "Kompleks berarti rumit, tidak sederhana, banyak komponen. Sinonimnya 'rumit'. Pengecoh A, C, D, E adalah antonim."
+  },
+  {
+    "question": "Sinonim dari kata 'EKSKLUSIF' adalah...",
+    "options": {
+      "A": "Umum",
+      "B": "Khusus",
+      "C": "Publik",
+      "D": "Terbuka",
+      "E": "Umum"
+    },
+    "answer": "B",
+    "explanation": "Eksklusif berarti khusus, terbatas, tidak untuk umum. Sinonimnya 'khusus'. Pengecoh A, C, D, E adalah antonim."
+  },
+  {
+    "question": "Sinonim dari kata 'ADIL' dalam konteks hukum adalah...",
+    "options": {
+      "A": "Bias",
+      "B": "Tidak berpihak",
+      "C": "Diskriminatif",
+      "D": "Setimpal",
+      "E": "Timpang"
+    },
+    "answer": "D",
+    "explanation": "Adil berarti setimpal, sama, tanpa diskriminasi. Sinonimnya 'setimpal'. Pengecoh A, C, E adalah antonim. B (tidak berpihak) adalah sifat, bukan sinonim langsung."
+  }
+]

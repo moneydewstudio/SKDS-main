@@ -1,0 +1,74 @@
+[
+  {
+    "question": "Antonim dari kata 'EKSPLOSIF' adalah...",
+    "options": {
+      "A": "Stabil",
+      "B": "Panas",
+      "C": "Membara",
+      "D": "Dahsyat",
+      "E": "Kuat"
+    },
+    "answer": "A",
+    "explanation": "Eksplosif berarti meledak-ledak/tidak stabil. Antonimnya adalah 'stabil'. Pengecoh B, C mendekati sinonim (membara=pantas), D dan E adalah kata asosiatif."
+  },
+  {
+    "question": "Antonim dari kata 'PLURALISME' adalah...",
+    "options": {
+      "A": "Keragaman",
+      "B": "Eksklusivisme",
+      "C": "Beragam",
+      "D": "Bervariasi",
+      "E": "Beraneka"
+    },
+    "answer": "B",
+    "explanation": "Pluralisme berarti penerimaan terhadap keragaman. Antonimnya eksklusivisme (menutup diri dari yang berbeda). Pengecoh A, C, D, E adalah sinonim."
+  },
+  {
+    "question": "Antonim dari kata 'TRANSPARAN' adalah...",
+    "options": {
+      "A": "Bening",
+      "B": "Jelas",
+      "C": "Gelap",
+      "D": "Tertutup",
+      "E": "Terbuka"
+    },
+    "answer": "D",
+    "explanation": "Transparan berarti terbuka, dapat dilihat dengan jelas. Antonimnya 'tertutup' atau 'opak'. Pengecoh A, B, E adalah sinonim. C (gelap) lebih ke kondisi pencahayaan."
+  },
+  {
+    "question": "Antonim dari kata 'KONKRET' adalah...",
+    "options": {
+      "A": "Nyata",
+      "B": "Abstrak",
+      "C": "Jelas",
+      "D": "Terlihat",
+      "E": "Real"
+    },
+    "answer": "B",
+    "explanation": "Konkret berarti nyata, dapat disentuh/lihat. Antonimnya 'abstrak' (tidak nyata, konsep saja). Pengecoh A, C, D, E adalah sinonim."
+  },
+  {
+    "question": "Antonim dari kata 'IMPlISIT' adalah...",
+    "options": {
+      "A": "Tersirat",
+      "B": "Eksplisit",
+      "C": "Samaran",
+      "D": "Tersembunyi",
+      "E": "Terselubung"
+    },
+    "answer": "B",
+    "explanation": "Implisit berarti tersirat, tidak langsung. Antonimnya 'eksplisit' (terang-terangan, jelas). Pengecoh A, C, D, E adalah sinonim."
+  },
+  {
+    "question": "Antonim dari kata 'OPTIMIS' adalah...",
+    "options": {
+      "A": "Pesimis",
+      "B": "Positif",
+      "C": "Semangat",
+      "D": "Percaya diri",
+      "E": "Harapan"
+    },
+    "answer": "A",
+    "explanation": "Optimis berarti berpandangan positif/positif thinking. Antonimnya 'pesimis' (berpandangan negatif). Pengecoh B, C, D, E adalah sinonim atau kata asosiatif."
+  }
+]

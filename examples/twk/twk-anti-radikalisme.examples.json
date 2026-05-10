@@ -1,0 +1,74 @@
+[
+  {
+    "question": "Pencegahan radikalisme yang efektif dimulai dari...",
+    "options": {
+      "A": "Penindakan hukum keras terhadap pelaku",
+      "B": "Penguatan pemahaman ideologi Pancasila dan toleransi sejak dini",
+      "C": "Pembatasan akses internet seluruh masyarakat",
+      "D": "Pengawasan ketat terhadap kelompok tertentu saja",
+      "E": "Deportasi warga negara yang dicurigai"
+    },
+    "answer": "B",
+    "explanation": "Pencegahan radikalisme yang efektif adalah upaya preventif dengan penguatan ideologi Pancasila dan nilai toleransi, bukan hanya represif."
+  },
+  {
+    "question": "Tanda-tanda seseorang mulai terpapar radikalisme antara lain...",
+    "options": {
+      "A": "Rajin beribadah",
+      "B": "Menolak toleransi dan mengutamakan kekerasan",
+      "C": "Aktif di organisasi sosial",
+      "D": "Mengikuti pendidikan formal",
+      "E": "Menggunakan media sosial"
+    },
+    "answer": "B",
+    "explanation": "Indikator radikalisme: intoleransi, penolakan terhadap perbedaan, dan legitimasi kekerasan untuk tujuan ideologis/politik."
+  },
+  {
+    "question": "Sikap moderat dalam beragama di Indonesia berarti...",
+    "options": {
+      "A": "Tidak beragama sama sekali",
+      "B": "Menghormati perbedaan dan menjaga kerukunan",
+      "C": "Mengubah keyakinan orang lain",
+      "D": "Mengisolasi diri dari yang berbeda",
+      "E": "Menerapkan aturan agama secara kaku tanpa konteks"
+    },
+    "answer": "B",
+    "explanation": "Moderasi beragama berarti berpegang teguh pada keyakinan sambil menghormati perbedaan dan menjaga kerukunan umat beragama."
+  },
+  {
+    "question": "Deradikalisasi bertujuan untuk...",
+    "options": {
+      "A": "Memenjarakan pelaku terorisme",
+      "B": "Mengembalikan individu ke pola pikir yang moderat dan toleran",
+      "C": "Mengusir kelompok radikal dari Indonesia",
+      "D": "Melarang semua kegiatan keagamaan",
+      "E": "Menguatkan identitas kelompok tertentu"
+    },
+    "answer": "B",
+    "explanation": "Deradikalisasi adalah proses mengembalikan individu dari pemikiran radikal/kasar ke pemikiran yang moderat, toleran, dan sesuai nilai Pancasila."
+  },
+  {
+    "question": "Peran masyarakat dalam pencegahan radikalisme adalah...",
+    "options": {
+      "A": "Menyerahkan sepenuhnya ke aparat",
+      "B": "Mewaspadai dan melaporkan gejala radikalisme",
+      "C": "Mengisolasi kelompok yang dicurigai",
+      "D": "Melakukan sweeping sendiri",
+      "E": "Menutup diri dari informasi luar"
+    },
+    "answer": "B",
+    "explanation": "Masyarakat berperan sebagai garda terdepan dengan mewaspadai dan melaporkan gejala radikalisme ke aparat berwenang."
+  },
+  {
+    "question": "Pancasila sebagai ideologi negara berperan dalam pencegahan radikalisme karena...",
+    "options": {
+      "A": "Mewajibkan semua warga beragama sama",
+      "B": "Mengajarkan toleransi dan penghormatan terhadap perbedaan",
+      "C": "Melarang kegiatan keagamaan",
+      "D": "Menguatkan identitas kelompok tertentu",
+      "E": "Menerapkan sistem hukum agama"
+    },
+    "answer": "B",
+    "explanation": "Pancasila, terutama sila pertama dan kedua, mengajarkan toleransi beragama dan penghormatan terhadap kemanusiaan tanpa diskriminasi."
+  }
+]

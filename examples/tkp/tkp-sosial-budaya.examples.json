@@ -1,0 +1,74 @@
+[
+  {
+    "question": "Anda ditugaskan ke daerah dengan budaya yang sangat berbeda dari budaya Anda. Sikap terbaik adalah...",
+    "options": {
+      "A": "Mempertahankan budaya Anda dan mengabaikan budaya setempat",
+      "B": "Belajar dan menghormati budaya setempat sambil mempertahankan identitas",
+      "C": "Mengubah budaya setempat sesuai budaya Anda",
+      "D": "Menghindari interaksi dengan masyarakat setempat",
+      "E": "Mengkritik budaya yang berbeda di media sosial"
+    },
+    "answer": "B",
+    "explanation": "A (2 poin): Egois. B (5 poin): Adaptif, menghormati keberagaman. C (1 poin): Mengakibatkan konflik. D (2 poin): Isolasi. E (1 poin): Tidak sensitif."
+  },
+  {
+    "question": "Seorang rekan kerja memakai pakaian adat daerahnya saat hari biasa di kantor. Respon terbaik adalah...",
+    "options": {
+      "A": "Menertawakannya karena berbeda",
+      "B": "Menghargai dan belajar tentang pakaian tersebut",
+      "C": "Melaporkan ke atasan sebagai pelanggaran",
+      "D": "Menyarankan agar memakai pakaian standar",
+      "E": "Mengabaikannya dengan ekspresi aneh"
+    },
+    "answer": "B",
+    "explanation": "A (1 poin): Menghina. B (5 poin): Apresiasi budaya, inklusif. C (2 poin): Intoleran. D (3 poin): Kurang apresiatif. E (2 poin): Tidak inklusif."
+  },
+  {
+    "question": "Saat rapat, rekan dari daerah tertentu mengungkapkan pendapat dengan cara yang dianggap 'terlalu lugas' oleh yang lain. Sikap Anda adalah...",
+    "options": {
+      "A": "Menegurnya untuk mengikuti norma mayoritas",
+      "B": "Memahami perbedaan komunikasi dan fokus pada substansi",
+      "C": "Mengabaikan pendapatnya",
+      "D": "Meminta atasan mengoreksinya",
+      "E": "Menyindirnya di depan umum"
+    },
+    "answer": "B",
+    "explanation": "A (2 poin): Kurang menghargai perbedaan. B (5 poin): Cross-cultural understanding, inklusif. C (2 poin): Diskriminatif. D (3 poin): Prematur. E (1 poin): Tidak konstruktif."
+  },
+  {
+    "question": "Masyarakat setempat mengadakan upacara adat yang bertepatan dengan deadline kerja Anda. Tindakan terbaik adalah...",
+    "options": {
+      "A": "Menolak kehadiran karena fokus deadline",
+      "B": "Menghadiri sebentar sambil mengatur prioritas tugas",
+      "C": "Mengabaikan upacara tanpa penjelasan",
+      "D": "Mengkritik upacara sebagai tidak penting",
+      "E": "Meminta masyarakat mengubah jadwal upacara"
+    },
+    "answer": "B",
+    "explanation": "A (2 poin): Tidak menghargai budaya. B (5 poin): Balance, menghormati budaya + profesional. C (2 poin): Tidak sopan. D (1 poin): Arogansi. E (2 poin): Intoleran."
+  },
+  {
+    "question": "Anda menemukan tradisi setempat bertentangan dengan nilai dasar yang Anda pegang. Sikap terbaik adalah...",
+    "options": {
+      "A": "Mengkritik terbuka dan memaksa perubahan",
+      "B": "Memahami konteks dengan dialog sambil memegang prinsip",
+      "C": "Mengikuti tradisi untuk diterima",
+      "D": "Memusuhi masyarakat setempat",
+      "E": "Melaporkan ke otoritas sebagai pelanggaran"
+    },
+    "answer": "B",
+    "explanation": "A (1 poin): Arogansi budaya. B (5 poin): Cross-cultural sensitivity + integrity. C (2 poin): Menjual prinsip. D (1 poin): Merusak hubungan. E (2 poin): Prematur."
+  },
+  {
+    "question": "Di tempat kerja baru, Anda mendengar gosip tentang stereotipe negatif suatu daerah. Tindakan terbaik adalah...",
+    "options": {
+      "A": "Ikut bergosip untuk diterima",
+      "B": "Tidak ikut serta dan mengalihkan pembicaraan",
+      "C": "Membela daerah tersebut dengan emosi",
+      "D": "Melaporkan semua pelaku gosip",
+      "E": "Mengabaikan tanpa aksi"
+    },
+    "answer": "B",
+    "explanation": "A (1 poin): Menjilat. B (5 poin): Anti diskriminasi + elegan + konstruktif. C (2 poin): Emosional. D (2 poin): Extrem. E (2 poin): Pasif."
+  }
+]

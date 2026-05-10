@@ -1,0 +1,6 @@
+{
+  "name": "Numerik Seeder",
+  "description": "A CPNS SKD question generator that simulates the official CAT BKN exam format using Gemini AI to create TIU Numerik Questions",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

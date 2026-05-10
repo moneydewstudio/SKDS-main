@@ -1,0 +1,74 @@
+[
+  {
+    "question": "Seorang ASN menemukan penyebaran hoax yang dapat memecah belah bangsa di media sosial. Tindakan yang mencerminkan semangat bela negara adalah...",
+    "options": {
+      "A": "Mengabaikan karena bukan wewenangnya",
+      "B": "Melaporkan dan membantu counter narasi dengan fakta",
+      "C": "Menyebarluaskan agar semakin viral",
+      "D": "Menertawakan saja karena konten lucu",
+      "E": "Menyimpan sendiri untuk koleksi pribadi"
+    },
+    "answer": "B",
+    "explanation": "Bela negara mencakup pertahanan non-militer seperti melawan disinformasi yang mengancam persatuan. ASN aktif melawan hoax = bela negara."
+  },
+  {
+    "question": "Bela negara dalam konteks modern mencakup aspek berikut, KECUALI...",
+    "options": {
+      "A": "Pertahanan militer",
+      "B": "Pertahanan ekonomi",
+      "C": "Pertahanan sosial budaya",
+      "D": "Pertahanan siber",
+      "E": "Agresi militer ke negara lain"
+    },
+    "answer": "E",
+    "explanation": "Bela negara adalah pertahanan, bukan agresi. Indonesia menganut politik luar negeri bebas aktif, tidak mencampuri urusan dalam negeri negara lain."
+  },
+  {
+    "question": "Sikap netralitas ASN dalam pilkada merupakan bagian dari bela negara karena...",
+    "options": {
+      "A": "Menghindari konflik personal",
+      "B": "Menjaga stabilitas dan demokrasi negara",
+      "C": "Mengikuti perintah atasan",
+      "D": "Menghindari sanksi hukum",
+      "E": "Meningkatkan popularitas pribadi"
+    },
+    "answer": "B",
+    "explanation": "Netralitas ASN menjaga integritas pemilu dan demokrasi, yang merupakan bagian dari pertahanan sistem ketatanegaraan (bela negara non-militer)."
+  },
+  {
+    "question": "Penggunaan produk dalam negeri untuk mendukung industri nasial merupakan bentuk bela negara di bidang...",
+    "options": {
+      "A": "Militer",
+      "B": "Ekonomi",
+      "C": "Sosial",
+      "D": "Budaya",
+      "E": "Politik"
+    },
+    "answer": "B",
+    "explanation": "Mengutamakan produk nasional adalah bela negara ekonomi - menguatkan daya saing dan kemandirian ekonomi bangsa."
+  },
+  {
+    "question": "Melaporkan penyelundupan narkoba ke aparat berwenang merupakan bentuk partisipasi bela negara sebagai...",
+    "options": {
+      "A": "Warga negara",
+      "B": "Pejabat negara",
+      "C": "Tentara",
+      "D": "Polisi",
+      "E": "Hakim"
+    },
+    "answer": "A",
+    "explanation": "Setiap warga negara, regardless of profession, dapat berpartisipasi dalam bela negara melalui kewaspadaan dan pelaporan ancaman."
+  },
+  {
+    "question": "Pencegahan radikalisme yang dilakukan oleh masyarakat sipil merupakan bentuk bela negara di bidang...",
+    "options": {
+      "A": "Militer",
+      "B": "Intelijen",
+      "C": "Sosial-ideologi",
+      "D": "Ekonomi",
+      "E": "Diplomasi"
+    },
+    "answer": "C",
+    "explanation": "Pencegahan radikalisme melalui penguatan ideologi Pancasila dan moderasi beragama adalah bela negara sosial-ideologis."
+  }
+]

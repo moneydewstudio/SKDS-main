@@ -1,0 +1,74 @@
+[
+  {
+    "question": "Jiwa nasionalisme yang kuat mencerminkan sikap...",
+    "options": {
+      "A": "Mementingkan kepentingan daerah sendiri",
+      "B": "Mengutamakan kepentingan bangsa dan negara",
+      "C": "Mengabaikan identitas lokal",
+      "D": "Menolak kerja sama internasional",
+      "E": "Menutup diri dari pengaruh luar"
+    },
+    "answer": "B",
+    "explanation": "Nasionalisme adalah sikap dan perilaku mengutamakan kepentingan bangsa dan negara di atas kepentingan pribadi atau golongan."
+  },
+  {
+    "question": "Semangat juang para pahlawan dalam mempertahankan kemerdekaan mencerminkan nilai...",
+    "options": {
+      "A": "Individualisme",
+      "B": "Nasionalisme",
+      "C": "Liberalisme",
+      "D": "Kapitalisme",
+      "E": "Anarkisme"
+    },
+    "answer": "B",
+    "explanation": "Pengorbanan pahlawan untuk kemerdekaan adalah implementasi nasionalisme - mencintai dan rela berkorban untuk bangsa."
+  },
+  {
+    "question": "Sikap yang mencerminkan nasionalisme dalam era globalisasi adalah...",
+    "options": {
+      "A": "Menolak semua pengaruh asing",
+      "B": "Mengadopsi budaya asing tanpa seleksi",
+      "C": "Melestarikan budaya nasional sambil terbuka terhadap yang positif dari luar",
+      "D": "Meninggalkan identitas nasional demi kemajuan",
+      "E": "Mengisolasi diri dari pergaulan internasional"
+    },
+    "answer": "C",
+    "explanation": "Nasionalisme yang sehat di era globalisasi adalah tetap menjaga dan mengembangkan budaya nasional sambil terbuka terhadap pengaruh luar yang positif (akulturasi)."
+  },
+  {
+    "question": "Penggunaan produk dalam negeri sebagai bentuk dukungan terhadap ekonomi nasional mencerminkan...",
+    "options": {
+      "A": "Diskriminasi produk asing",
+      "B": "Nasionalisme ekonomi",
+      "C": "Isolasi perdagangan",
+      "D": "Proteksionisme berlebihan",
+      "E": "Penutupan pasar domestik"
+    },
+    "answer": "B",
+    "explanation": "Mengutamakan produk nasional adalah nasionalisme ekonomi - mendukung kemandirian dan pertumbuhan ekonomi dalam negeri."
+  },
+  {
+    "question": "Menghormati simbol negara seperti bendera dan lagu kebangsaan merupakan bentuk...",
+    "options": {
+      "A": "Formalitas belaka",
+      "B": "Nasionalisme",
+      "C": "Otoritarianisme",
+      "D": "Oposisi politik",
+      "E": "Ritualitas semata"
+    },
+    "answer": "B",
+    "explanation": "Menghormati simbol negara adalah ekspresi nasionalisme - penghargaan dan cinta terhadap identitas dan kedaulatan bangsa."
+  },
+  {
+    "question": "Partisipasi dalam pemilu dan mengikuti aturan demokrasi mencerminkan nasionalisme dalam bentuk...",
+    "options": {
+      "A": "Politisasi identitas",
+      "B": "Kewarganegaraan aktif",
+      "C": "Pengabdian partisan",
+      "D": "Konformitas buta",
+      "E": "Penurutan otoritas"
+    },
+    "answer": "B",
+    "explanation": "Partisipasi aktif dalam proses demokrasi adalah kewarganegaraan aktif - bentuk nasionalisme dalam mengisi kemerdekaan."
+  }
+]

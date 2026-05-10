@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Sila kelima Pancasila menekankan pentingnya keadilan sosial bagi seluruh rakyat Indonesia. Ini mencerminkan nilai...",
+    "options": {
+      "A": "Individualisme dan kebebasan absolut",
+      "B": "Kolektivisme dan keadilan sosial",
+      "C": "Materialisme dan akumulasi kekayaan",
+      "D": "Elitisme dan diskriminasi sosial",
+      "E": "Anarkisme dan penolakan terhadap negara"
+    },
+    "answer": "B",
+    "explanation": "Sila ke-5: 'Keadilan sosial bagi seluruh rakyat Indonesia' mencerminkan nilai kolektivisme (bersama-sama) dan keadilan sosial (pemerataan)."
+  },
+  {
+    "question": "Seseorang menolak untuk mengakui adanya Tuhan dalam konteks bernegara. Sikap ini bertentangan dengan...",
+    "options": {
+      "A": "Sila pertama Pancasila",
+      "B": "Sila kedua Pancasila",
+      "C": "Sila ketiga Pancasila",
+      "D": "Sila keempat Pancasila",
+      "E": "Sila kelima Pancasila"
+    },
+    "answer": "A",
+    "explanation": "Sila pertama: 'Ketuhanan Yang Maha Esa' menuntut pengakuan dan kepercayaan kepada Tuhan. Menolak Tuhan adalah pelanggaran sila pertama."
+  },
+  {
+    "question": "Seorang pemimpin daerah membuat kebijakan yang hanya menguntungkan kelompok pendukungnya saja. Kebijakan ini bertentangan dengan semangat...",
+    "options": {
+      "A": "Kemanusiaan yang adil dan beradab",
+      "B": "Persatuan Indonesia",
+      "C": "Kerakyatan yang dipimpin oleh hikmat kebijaksanaan",
+      "D": "Keadilan sosial bagi seluruh rakyat Indonesia",
+      "E": "Ketuhanan Yang Maha Esa"
+    },
+    "answer": "D",
+    "explanation": "Keadilan sosial berarti pemerataan untuk seluruh rakyat, bukan hanya kelompok tertentu. Kebijakan yang diskriminatif melanggar sila kelima."
+  },
+  {
+    "question": "Pengakuan dan penghargaan terhadap keberagaman budaya, suku, dan agama dalam satu kesatuan negara merupakan implementasi dari...",
+    "options": {
+      "A": "Sila pertama dan kedua Pancasila",
+      "B": "Sila kedua dan ketiga Pancasila",
+      "C": "Sila ketiga dan keempat Pancasila",
+      "D": "Sila keempat dan kelima Pancasila",
+      "E": "Semua sila Pancasila secara bersamaan"
+    },
+    "answer": "B",
+    "explanation": "Sila kedua (kemanusiaan) mengakui martabat manusia tanpa diskriminasi, sila ketiga (persatuan) menyatukan keberagaman dalam satu bangsa."
+  },
+  {
+    "question": "Dalam sistem pemerintahan Indonesia, kedaulatan berada di tangan rakyat dan dilaksanakan sepenuhnya oleh Majelis Permusyawaratan Rakyat. Ini sesuai dengan...",
+    "options": {
+      "A": "Sila pertama Pancasila",
+      "B": "Sila kedua Pancasila",
+      "C": "Sila ketiga Pancasila",
+      "D": "Sila keempat Pancasila",
+      "E": "Sila kelima Pancasila"
+    },
+    "answer": "D",
+    "explanation": "Sila keempat: 'Kerakyatan yang dipimpin oleh hikmat kebijaksanaan dalam permusyawaratan/perwakilan' mengatur tentang kedaulatan rakyat dan mekanisme demokrasi."
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "id": "tiu-verbal-sinonim",
+  "category": "TIU",
+  "topicCode": "TIU",
+  "topicName": "Tes Intelegensia Umum",
+  "subtopicCode": "TIU_VERBAL",
+  "subtopicName": "Verbal",
+  "themeCode": "VERBAL_SINONIM",
+  "themeName": "Sinonim",
+  "topic": "Verbal",
+  "subtopic": "Sinonim",
+  "syllabus": "Menguji kemampuan mengenal padanan kata yang maknanya sama atau mendekati (persamaan kata)",
+  "contextSource": "bank",
+  "promptTemplate": "Anda adalah AGENT TIU - Spesialis Sinonim (Persamaan Kata).\n\nTUGAS: Buat 1 soal TIU Sinonim dengan tingkat kesulitan {{difficulty}}/5.\n\nSILABUS: {{syllabus}}\n\nMATERI BANK SOAL (referensi pola):\n{{contextMaterial}}\n\nCONTOH SOAL REFERENSI:\n{{examples}}\n\nINSTRUKSI HOTS:\n- Pilih kata yang benar-benar sinonim (makna identik atau sangat mirip)\n- Pengecoh bisa: kata serupa tapi beda makna, konteks berbeda, atau makna terbalik\n- Tingkat kesulitan {{difficulty}}: 1-2=umum, 3=jarang, 4-5=baku/arsaik\n\nRESTRAINTS:\n- Waktu pengerjaan maksimal 60 detik\n- Hindari kata yang memiliki banyak makna homonim\n\nFORMAT JSON OUTPUT:\n{\n  \"questions\": [{\n    \"meta\": { \"news_topic\": \"Sinonim\", \"question_type\": \"TIU\" },\n    \"content\": {\n      \"category\": \"TIU\",\n      \"topic\": \"Verbal\",\n      \"subtopic\": \"Sinonim\",\n      \"difficulty\": {{difficulty}},\n      \"question_text\": \"Sinonim dari kata '...' adalah...\",\n      \"options\": { \"A\": \"...\", \"B\": \"...\", \"C\": \"...\", \"D\": \"...\", \"E\": \"...\" },\n      \"answer_key\": { \"correct_option\": \"A\", \"tkp_points\": null },\n      \"explanation\": \"Jelaskan makna kata dan kenapa jawaban tersebut sinonim yang tepat.\"\n    }\n  }]\n}",
+  "examplesFile": "tiu-verbal-sinonim.examples.json",
+  "difficultySchedule": {
+    "0": 2, "1": 2, "2": 2, "3": 3, "4": 2, "5": 3, "6": 2, "7": 3, "8": 2, "9": 3,
+    "10": 2, "11": 3, "12": 2, "13": 4, "14": 3, "15": 4, "16": 3, "17": 4, "18": 3, "19": 2,
+    "20": 3, "21": 2, "22": 4, "23": 3
+  }
+}

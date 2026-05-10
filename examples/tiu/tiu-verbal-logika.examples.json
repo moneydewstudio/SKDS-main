@@ -1,0 +1,74 @@
+[
+  {
+    "question": "Semua pegawai kantor X menggunakan seragam putih biru. Budi adalah pegawai kantor X yang sedang cuti. Maka...",
+    "options": {
+      "A": "Budi tidak menggunakan seragam putih biru",
+      "B": "Budi tetap menggunakan seragam putih biru",
+      "C": "Budi mungkin menggunakan seragam putih biru",
+      "D": "Budi menggunakan seragam lain",
+      "E": "Tidak dapat ditentukan"
+    },
+    "answer": "B",
+    "explanation": "Dari premis: Semua P adalah S. Budi adalah P. Maka Budi adalah S (menggunakan seragam). Cuti tidak menghilangkan status sebagai pegawai."
+  },
+  {
+    "question": "Diketahui: (1) Semua peserta tes sudah lulus verifikasi, (2) Sebagian peserta tes membawa pensil 2B. Simpulan yang sah adalah...",
+    "options": {
+      "A": "Semua yang lulus verifikasi membawa pensil 2B",
+      "B": "Sebagian yang lulus verifikasi membawa pensil 2B",
+      "C": "Tidak ada yang lulus verifikasi membawa pensil 2B",
+      "D": "Semua peserta tidak membawa pensil 2B",
+      "E": "Semua peserta lulus verifikasi"
+    },
+    "answer": "B",
+    "explanation": "Dari premis: Semua P adalah V. Sebagian P adalah B. Maka sebagian V adalah P yang B = sebagian yang lulus verifikasi membawa pensil 2B."
+  },
+  {
+    "question": "Data menunjukkan: Tingkat kecelakaan turun 20% setelah dipasang rambu-rambu. Namun, korban luka berat naik 15%. Simpulan yang tepat adalah...",
+    "options": {
+      "A": "Rambu-rambu tidak efektif",
+      "B": "Jumlah kecelakaan turun tapi parahnya naik",
+      "C": "Pengemudi tidak mematuhi rambu",
+      "D": "Rambu membuat kecelakaan lebih parah",
+      "E": "Tidak ada perubahan signifikan"
+    },
+    "answer": "B",
+    "explanation": "Analisis data: 20% kecelakaan turun vs 15% luka berat naik. Simpulan: jumlah kecelakaan turun tapi parahnya naik. Tidak cukup data untuk kesimpulan lain."
+  },
+  {
+    "question": "Survei: 60% responden setuju kenaikan pajak, 30% menolak, 10% abstain. Jika jumlah responden 1000 orang, berapa yang setuju?",
+    "options": {
+      "A": "300",
+      "B": "600",
+      "C": "100",
+      "D": "900",
+      "E": "400"
+    },
+    "answer": "B",
+    "explanation": "Perhitungan: 60% dari 1000 = 0.6 × 1000 = 600 orang setuju."
+  },
+  {
+    "question": "Diketahui: (1) Semua ASN wajib lapor harta kekayaan, (2) Budi tidak melapor harta kekayaan. Kesimpulan yang sah adalah...",
+    "options": {
+      "A": "Budi bukan ASN",
+      "B": "Budi melanggar aturan",
+      "C": "Budi sudah lapor",
+      "D": "Aturan tidak berlaku untuk Budi",
+      "E": "Budi punya harta"
+    },
+    "answer": "A",
+    "explanation": "Silogisme: Semua A adalah B. C bukan B. Maka C bukan A. Semua ASN wajib lapor. Budi tidak lapor. Maka Budi bukan ASN (atau melanggar jika memang ASN)."
+  },
+  {
+    "question": "Jika A > B dan B > C, maka pernyataan yang pasti benar adalah...",
+    "options": {
+      "A": "A > C",
+      "B": "A < C",
+      "C": "A = C",
+      "D": "B > A",
+      "E": "C > B"
+    },
+    "answer": "A",
+    "explanation": "Transitivitas: A > B dan B > C maka A > C. Ini adalah hubungan transitif dalam logika matematika."
+  }
+]

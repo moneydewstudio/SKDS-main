@@ -1,0 +1,74 @@
+[
+  {
+    "question": "Anda adalah anggota tim proyek yang menemukan rekan tim sering telat mengumpulkan tugasnya. Tindakan Anda adalah...",
+    "options": {
+      "A": "Melaporkan langsung ke atasan tanpa diskusi",
+      "B": "Berbicara empat mata dan mencari solusi bersama",
+      "C": "Mengabaikan saja karena bukan urusan Anda",
+      "D": "Memarahinya di depan anggota tim lain",
+      "E": "Menuntut atasan untuk memindahkannya dari tim"
+    },
+    "answer": "B",
+    "explanation": "A (3 poin): Prosedural tapi kurang kolaboratif. B (5 poin): Komunikatif, solusi-oriented, membangun jejaring. C (2 poin): Pasif. D (1 poin): Merusak hubungan. E (2 poin): Menghindari masalah."
+  },
+  {
+    "question": "Saat presentasi proyek, seorang rekannya menjawab pertanyaan klien yang seharusnya menjadi wewenang Anda. Tindakan Anda adalah...",
+    "options": {
+      "A": "Menegur rekan itu di depan klien",
+      "B": "Melanjutkan dengan profesional dan klarifikasi internal nanti",
+      "C": "Membantah jawaban rekan di depan klien",
+      "D": "Mengabaikan dan diam saja",
+      "E": "Mengajukan komplain ke atasan saat itu juga"
+    },
+    "answer": "B",
+    "explanation": "A (2 poin): Tidak profesional. B (5 poin): Prioritas reputasi tim + klarifikasi internal. C (1 poin): Tidak solidar. D (2 poin): Pasif. E (2 poin): Panik."
+  },
+  {
+    "question": "Divisi Anda perlu berkolaborasi dengan divisi lain yang memiliki prioritas berbeda. Sikap terbaik adalah...",
+    "options": {
+      "A": "Memaksa divisi lain mengikuti jadwal Anda",
+      "B": "Mencari win-win solution melalui dialog",
+      "C": "Mengabaikan kolaborasi dan bekerja sendiri",
+      "D": "Mengeluh ke atasan tentang divisi lain",
+      "E": "Meminta atasan memberi perintah ke divisi lain"
+    },
+    "answer": "B",
+    "explanation": "A (2 poin): Tidak kolaboratif. B (5 poin): Negosiasi, win-win, membangun jejaring. C (1 poin): Tidak team player. D (2 poin): Mengeluh. E (3 poin): Escalation cepat."
+  },
+  {
+    "question": "Sebagai koordinator, Anda menemukan ada konflik personal antar anggota tim yang mulai memengaruhi kerja. Tindakan Anda adalah...",
+    "options": {
+      "A": "Biarkan mereka menyelesaikan sendiri",
+      "B": "Mediasi dengan mendengarkan kedua belah pihak",
+      "C": "Pindahkan salah satu dari tim",
+      "D": "Ambil sisi siapa yang lebih senior",
+      "E": "Laporkan ke atasan tanpa intervensi"
+    },
+    "answer": "B",
+    "explanation": "A (2 poin): Konflik membesar. B (5 poin): Mediasi aktif, membangun hubungan. C (2 poin): Menghindari akar masalah. D (1 poin): Tidak adil. E (3 poin): Delegasi prematur."
+  },
+  {
+    "question": "Rekan kerja mengajak Anda bergabung dengan kelompok WhatsApp yang sering berisi kritik tidak konstruktif terhadap atasan. Sikap Anda adalah...",
+    "options": {
+      "A": "Bergabung untuk ikut kritik",
+      "B": "Menolak dengan sopan dan mengalihkan ke topik positif",
+      "C": "Bergabung tapi hanya membaca",
+      "D": "Melaporkan ke atasan tentang kelompok itu",
+      "E": "Mengabaikan ajakan tanpa penjelasan"
+    },
+    "answer": "B",
+    "explanation": "A (1 poin): Negatif. B (5 poin): Menjaga integritas + hubungan + tidak judgmental. C (2 poin): Passif. D (2 poin): Reporting tanpa konteks. E (3 poin): Kurang komunikatif."
+  },
+  {
+    "question": "Anda memerlukan data dari departemen lain untuk deadline minggu ini, tapi mereka bilang butuh 2 minggu. Tindakan Anda adalah...",
+    "options": {
+      "A": "Menyerah dan meminta perpanjangan deadline",
+      "B": "Negosiasi dengan menjelaskan urgensi dan mencari alternatif",
+      "C": "Mengeluh ke atasan mereka tentang kelambatan",
+      "D": "Memalsukan data untuk menyelesaikan tugas",
+      "E": "Memaksa mereka dengan ancaman reporting"
+    },
+    "answer": "B",
+    "explanation": "A (2 poin): Menyerah. B (5 poin): Proaktif, negosiasi, problem solving. C (2 poin): Mengeluh. D (1 poin): Integritas rendah. E (1 poin): Ancaman tidak profesional."
+  }
+]

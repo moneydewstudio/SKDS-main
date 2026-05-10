@@ -1,0 +1,74 @@
+[
+  {
+    "question": "Semua bunga harum. Sebagian bunga berwarna merah. Kesimpulan yang sah adalah...",
+    "options": {
+      "A": "Semua yang berwarna merad itu harum",
+      "B": "Sebagian yang harum itu berwarna merah",
+      "C": "Semua bunga harum dan berwarna merah",
+      "D": "Tidak ada bunga yang harum kecuali yang merah",
+      "E": "Semua bunga tidak berwarna merah"
+    },
+    "answer": "B",
+    "explanation": "Dari premis: Semua B (bunga) adalah H (harum). Sebagian B adalah M (merah). Maka sebagian H adalah B yang M = sebagian yang harum berwarna merah."
+  },
+  {
+    "question": "Semua ASN harus netral. Pak Budi adalah ASN. Kesimpulan yang sah adalah...",
+    "options": {
+      "A": "Pak Budi boleh mendukung calon tertentu",
+      "B": "Pak Budi harus netral",
+      "C": "Semua yang netral adalah ASN",
+      "D": "Pak Budi tidak boleh menjadi ASN",
+      "E": "ASN tidak boleh bekerja"
+    },
+    "answer": "B",
+    "explanation": "Dari premis: Semua ASN adalah N (netral). Pak Budi adalah ASN. Maka Pak Budi harus N (netral). Ini silogisme AAA-1 (Barbara)."
+  },
+  {
+    "question": "Tidak ada kucing yang bersayap. Semua burung bersayap. Kesimpulan yang sah adalah...",
+    "options": {
+      "A": "Semua kucing adalah burung",
+      "B": "Tidak ada kucing yang burung",
+      "C": "Semua burung adalah kucing",
+      "D": "Semua yang bersayap adalah burung",
+      "E": "Tidak ada burung yang kucing"
+    },
+    "answer": "B",
+    "explanation": "Dari premis: Tidak ada K yang S. Semua B adalah S. Maka tidak ada K yang B (karena semua B punya S, sedangkan K tidak punya S)."
+  },
+  {
+    "question": "Semua mahasiswa rajin belajar. Sebagian mahasiswa adalah atlet. Kesimpulan yang sah adalah...",
+    "options": {
+      "A": "Semua atlet rajin belajar",
+      "B": "Sebagian atlet rajin belajar",
+      "C": "Tidak ada atlet yang rajin belajar",
+      "D": "Semua mahasiswa adalah atlet",
+      "E": "Semua atlet adalah mahasiswa"
+    },
+    "answer": "B",
+    "explanation": "Dari premis: Semua M adalah R. Sebagian M adalah A. Maka sebagian A adalah M yang R = sebagian atlet rajin belajar."
+  },
+  {
+    "question": "Jika hujan turun, maka jalan basah. Jalan tidak basah. Kesimpulan yang sah adalah...",
+    "options": {
+      "A": "Hujan turun",
+      "B": "Hujan tidak turun",
+      "C": "Jalan kering",
+      "D": "Tidak ada hujan",
+      "E": "Jalan rusak"
+    },
+    "answer": "B",
+    "explanation": "Ini modus tollens: p → q, ¬q, maka ¬p. Jika hujan maka basah. Tidak basah. Maka hujan tidak turun."
+  },
+  {
+    "question": "Semua dokter adalah sarjana. Sebagian sarjana adalah pengusaha. Kesimpulan yang sah adalah...",
+    "options": {
+      "A": "Semua dokter adalah pengusaha",
+      "B": "Sebagian dokter mungkin pengusaha",
+      "C": "Tidak ada dokter yang pengusaha",
+      "D": "Semua pengusaha adalah dokter",
+      "E": "Semua pengusaha adalah sarjana"
+    },
+    "answer": "B",
+    "explanation": "Dari premis AAA-1 dan I tidak menghasilkan kesimpulan pasti (mood invalid). Hanya bisa disimpulkan 'sebagian dokter mungkin pengusaha' (possibility)."
+  }
+]

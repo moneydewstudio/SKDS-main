@@ -1,0 +1,74 @@
+[
+  {
+    "question": "Anda menemukan akun media sosial palsu yang menyerang instansi Anda menggunakan foto palsu. Tindakan pertama yang tepat adalah...",
+    "options": {
+      "A": "Serang balik akun tersebut",
+      "B": "Dokumentasikan dan laporkan ke humas/divisi TIK",
+      "C": "Abaikan karena hoax biasa",
+      "D": "Sebarkan ke teman-teman untuk dihujat",
+      "E": "Hapus akun Anda sendiri"
+    },
+    "answer": "B",
+    "explanation": "A (1 poin): Cyberwar. B (5 poin): Prosedur tepat, dokumentasi, eskalasi ke unit berwenang. C (2 poin): Abaikan hoax berbahaya. D (1 poin): Amplifikasi. E (1 poin): Retreat."
+  },
+  {
+    "question": "Password Anda bocor dan akun email kantor disalahgunakan. Tindakan Anda adalah...",
+    "options": {
+      "A": "Diam dan buat akun baru sendiri",
+      "B": "Lapor IT security dan ganti password segera",
+      "C": "Abaikan karena tidak merugikan langsung",
+      "D": "Salahkan IT karena sistem lemah",
+      "E": "Pakai akun teman untuk sementara"
+    },
+    "answer": "B",
+    "explanation": "A (2 poin): Hidden breach. B (5 poin): Security awareness, containment, recovery. C (1 poin): Ignore threat. D (2 poin): Blame. E (1 poin): Compromise more."
+  },
+  {
+    "question": "Anda menerima email phishing yang mengatasnamakan bank mitra. Tindakan Anda adalah...",
+    "options": {
+      "A": "Klik link untuk verifikasi",
+      "B": "Hapus dan laporkan ke IT security",
+      "C": "Balas email dengan data yang diminta",
+      "D": "Sebarkan ke rekan untuk awareness",
+      "E": "Hubungi bank melalui nomor di email"
+    },
+    "answer": "B",
+    "explanation": "A (1 poin): Fall victim. B (5 poin): Security best practice, report phishing. C (1 poin): Data breach. D (4 poin): Awareness tapi risiko spread. E (1 poin): Contact attacker."
+  },
+  {
+    "question": "Rekan meminta password WiFi kantor untuk tamunya. Sikap Anda adalah...",
+    "options": {
+      "A": "Berikan untuk tolong-menolong",
+      "B": "Tolak dan arahkan ke prosedur guest access",
+      "C": "Berikan tapi suruh jangan sebar",
+      "D": "Abaikan permintaan",
+      "E": "Berikan password admin"
+    },
+    "answer": "B",
+    "explanation": "A (2 poin): Security risk. B (5 poin): Policy compliance, proper channel. C (2 poin): Policy violation. D (2 poin): Unhelpful. E (1 poin): Critical breach."
+  },
+  {
+    "question": "Anda menemukan data pribadi klien tersimpan tidak terenkripsi di laptop lama. Tindakan Anda adalah...",
+    "options": {
+      "A": "Abaikan karena laptop tidak dipakai",
+      "B": "Lapor keamanan dan hapus dengan prosedur aman",
+      "C": "Format sendiri tanpa lapor",
+      "D": "Copy dulu untuk cadangan",
+      "E": "Jual laptop dengan data"
+    },
+    "answer": "B",
+    "explanation": "A (1 poin): Data exposure risk. B (5 poin): Data protection, proper disposal. C (3 poin): Action tapi no audit trail. D (1 poin): Copy violation. E (1 poin): Data breach."
+  },
+  {
+    "question": "Aplikasi kerja Anda memerlukan update security patch. Anda sedang sibuk deadline. Tindakan Anda adalah...",
+    "options": {
+      "A": "Tunda update sampai deadline lewat",
+      "B": "Update segera karena security priority",
+      "C": "Matikan auto-update permanen",
+      "D": "Mint IT disable update untuk Anda",
+      "E": "Pakai aplikasi tanpa update"
+    },
+    "answer": "B",
+    "explanation": "A (2 poin): Vulnerability window. B (5 poin): Security first, patch management. C (1 poin): Disable protection. D (2 poin): Exception policy. E (1 poin): Unpatched vulnerability."
+  }
+]

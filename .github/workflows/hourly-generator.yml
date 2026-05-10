@@ -1,0 +1,84 @@
+name: Hourly Question Generator
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Run every hour at minute 0
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Force generation even if hour already exists'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
+      query:
+        description: 'Optional query for news context (overrides default)'
+        required: false
+        type: string
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Run hourly worker
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY_1: ${{ secrets.GEMINI_API_KEY_1 }}
+          GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
+          GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
+          GEMINI_API_KEY_4: ${{ secrets.GEMINI_API_KEY_4 }}
+          GEMINI_API_KEY_5: ${{ secrets.GEMINI_API_KEY_5 }}
+          NEON_CONNECTION_STRING: ${{ secrets.NEON_CONNECTION_STRING }}
+        run: |
+          FORCE_FLAG=""
+          QUERY_FLAG=""
+          
+          if [ "${{ github.event.inputs.force }}" == "true" ]; then
+            FORCE_FLAG="--force"
+          fi
+          
+          if [ -n "${{ github.event.inputs.query }}" ]; then
+            QUERY_FLAG="--query=${{ github.event.inputs.query }}"
+          fi
+          
+          npx ts-node scripts/hourlyWorker.ts $FORCE_FLAG $QUERY_FLAG
+      
+      - name: Upload logs on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: worker-logs
+          path: |
+            /home/runner/.npm/_logs/*.log
+          retention-days: 7
+
+  notify:
+    needs: generate
+    if: always()
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Notify success
+        if: needs.generate.result == 'success'
+        run: echo "✅ Hourly question generation completed successfully"
+      
+      - name: Notify failure
+        if: needs.generate.result == 'failure'
+        run: |
+          echo "❌ Hourly question generation failed"
+          echo "Check the workflow logs for details"

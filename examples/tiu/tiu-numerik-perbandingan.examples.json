@@ -1,0 +1,74 @@
+[
+  {
+    "question": "Perbandingan uang A dan B adalah 3 : 5. Jika selisih uang mereka Rp 40.000, berapa uang A?",
+    "options": {
+      "A": "Rp 30.000",
+      "B": "Rp 60.000",
+      "C": "Rp 80.000",
+      "D": "Rp 100.000",
+      "E": "Rp 120.000"
+    },
+    "answer": "B",
+    "explanation": "Selisih perbandingan: 5 - 3 = 2. 2 bagian = Rp 40.000. 1 bagian = Rp 20.000. Uang A = 3 × Rp 20.000 = Rp 60.000."
+  },
+  {
+    "question": "Perbandingan umur ayah dan anak adalah 7 : 2. Jumlah umur mereka 54 tahun. Berapa umur anak?",
+    "options": {
+      "A": "10 tahun",
+      "B": "12 tahun",
+      "C": "14 tahun",
+      "D": "16 tahun",
+      "E": "18 tahun"
+    },
+    "answer": "B",
+    "explanation": "Total perbandingan: 7 + 2 = 9. 9 bagian = 54 tahun. 1 bagian = 6 tahun. Umur anak = 2 × 6 = 12 tahun."
+  },
+  {
+    "question": "Sebuah peta dengan skala 1 : 500.000. Jika jarak dua kota di peta 4 cm, jarak sebenarnya adalah...",
+    "options": {
+      "A": "2 km",
+      "B": "5 km",
+      "C": "10 km",
+      "D": "20 km",
+      "E": "50 km"
+    },
+    "answer": "D",
+    "explanation": "Jarak = 4 cm × 500.000 = 2.000.000 cm = 20 km."
+  },
+  {
+    "question": "Jika 12 orang pekerja dapat menyelesaikan pekerjaan dalam 20 hari, berapa hari yang diperlukan oleh 15 orang pekerja?",
+    "options": {
+      "A": "12 hari",
+      "B": "15 hari",
+      "C": "16 hari",
+      "D": "18 hari",
+      "E": "24 hari"
+    },
+    "answer": "C",
+    "explanation": "Perbandingan berbalik: 12 × 20 = 15 × h. h = 240 ÷ 15 = 16 hari."
+  },
+  {
+    "question": "Perbandingan penjualan tahun ini dan tahun lalu adalah 5 : 4. Jika penjualan tahun ini Rp 25 juta, berapa penjualan tahun lalu?",
+    "options": {
+      "A": "Rp 16 juta",
+      "B": "Rp 18 juta",
+      "C": "Rp 20 juta",
+      "D": "Rp 22 juta",
+      "E": "Rp 24 juta"
+    },
+    "answer": "C",
+    "explanation": "5 bagian = Rp 25 juta. 1 bagian = Rp 5 juta. Tahun lalu = 4 × Rp 5 juta = Rp 20 juta."
+  },
+  {
+    "question": "Campuran minyak dan bensin dengan perbandingan 3 : 7. Jika total campuran 50 liter, berapa liter minyak?",
+    "options": {
+      "A": "10 liter",
+      "B": "12 liter",
+      "C": "15 liter",
+      "D": "20 liter",
+      "E": "25 liter"
+    },
+    "answer": "C",
+    "explanation": "Total perbandingan: 3 + 7 = 10. 10 bagian = 50 liter. 1 bagian = 5 liter. Minyak = 3 × 5 = 15 liter."
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "question": "Anda menemukan rekan kerja menyebarluaskan konten radikal di grup kerja. Tindakan Anda adalah...",
+    "options": {
+      "A": "Abaikan karena bukan wewenang Anda",
+      "B": "Tegur privat dan ingatkan nilai Pancasila",
+      "C": "Laporkan ke atasan dengan bukti",
+      "D": "Sebarluaskan ke grup lain",
+      "E": "Setuju dengan isinya"
+    },
+    "answer": "C",
+    "explanation": "A (2 poin): Abaikan ancaman. B (4 poin): Baik tapi radikalisme perlu laporan resmi. C (5 poin): Prosedur benar, melawan radikalisme. D (1 poin): Memperparah. E (1 poin): Mendukung radikal."
+  },
+  {
+    "question": "Seseorang menawarkan Anda bergabung dengan organisasi yang menolak pluralisme. Sikap Anda adalah...",
+    "options": {
+      "A": "Bergabung untuk mempelajari lebih lanjut",
+      "B": "Tolak tegas dengan alasan nilai Pancasila",
+      "C": "Bergabung dengan diam-diam",
+      "D": "Abaikan saja tanpa penolakan",
+      "E": "Merekrut rekan lain untuk bergabung"
+    },
+    "answer": "B",
+    "explanation": "A (1 poin): Berisiko terpapar. B (5 poin): Jelas menolak radikalisme, pegang prinsip. C (1 poin): Mendukung tersembunyi. D (2 poin): Ambigu. E (1 poin): Merekrut radikal."
+  },
+  {
+    "question": "Anda mendengar ada rekan yang mengisolasi diri dan menolak interaksi dengan rekan dari agama lain. Tindakan Anda adalah...",
+    "options": {
+      "A": "Biarkan sebagai pilihan pribadi",
+      "B": "Ciptakan kesempatan interaksi positif antar rekan",
+      "C": "Isolate rekan tersebut dari tim",
+      "D": "Laporkan sebagai pelanggaran",
+      "E": "Ikut mengisolasi kelompok tertentu"
+    },
+    "answer": "B",
+    "explanation": "A (2 poin): Intoleransi membesar. B (5 poin): Proaktif membangun inklusivitas, cegah radikalisasi. C (2 poin): Diskriminatif. D (3 poin): Prematur. E (1 poin): Mendukung intoleransi."
+  },
+  {
+    "question": "Rekan sering berbicara tentang superioritas kelompoknya dan merendahkan yang lain. Sikap Anda adalah...",
+    "options": {
+      "A": "Diam saja untuk menghindari konflik",
+      "B": "Koreksi dengan mengingatkan nilai kesetaraan",
+      "C": "Setuju agar diterima dalam kelompok",
+      "D": "Laporkan ke polisi",
+      "E": "Sebarkan pernyataannya"
+    },
+    "answer": "B",
+    "explanation": "A (2 poin): Membiarkan radikalisasi. B (5 poin): Melawan sikap superioritas, edukasi. C (1 poin): Mendukung rasisme. D (2 poin): Overreaction. E (1 poin): Amplifikasi rasisme."
+  },
+  {
+    "question": "Anda diminta menghapus jejak digital konten radikal yang pernah Anda konsumsi. Tindakan Anda adalah...",
+    "options": {
+      "A": "Biarkan saja karena masa lalu",
+      "B": "Hapus dan laporkan sumber konten",
+      "C": "Hapus tanpa lapor",
+      "D": "Bagikan dulu sebelum hapus",
+      "E": "Konsumsi lebih banyak untuk pahami"
+    },
+    "answer": "B",
+    "explanation": "A (2 poin): Risiko terus terpapar. B (5 poin): Clean up + prevent others, responsible. C (3 poin): Kurang preventif. D (1 poin): Spread radikal. E (1 poin): Terpapar lebih dalam."
+  },
+  {
+    "question": "Atasan memberikan arahan yang diskriminatif terhadap kelompok tertentu. Sikap Anda adalah...",
+    "options": {
+      "A": "Laksanakan karena perintah atasan",
+      "B": "Ingatkan implikasi hukum dan nilai Pancasila",
+      "C": "Abaikan perintah tanpa penjelasan",
+      "D": "Sebarkan ke publik untuk shame",
+      "E": "Ikut diskriminasi untuk aman"
+    },
+    "answer": "B",
+    "explanation": "A (2 poin): Ikut diskriminasi. B (5 poin): Melawan diskriminasi, professional reminder. C (2 poin): Tidak komunikatif. D (1 poin): Public shaming. E (1 poin): Aktif diskriminasi."
+  }
+]

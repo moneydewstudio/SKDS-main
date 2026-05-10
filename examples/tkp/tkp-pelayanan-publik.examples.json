@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Seorang warga datang ke kantor dengan wajah marah karena pengurusan dokumen tertunda. Sebagai petugas, sikap terbaik adalah...",
+    "options": {
+      "A": "Menyuruhnya menunggu dengan sabar tanpa penjelasan",
+      "B": "Mendengarkan keluhannya dengan empati dan memberi solusi",
+      "C": "Mengabaikannya dan fokus pada pekerjaan lain",
+      "D": "Memarahinya karena tidak menghargai prosedur",
+      "E": "Menyarankan dia datang lain kali saat tidak marah"
+    },
+    "answer": "B",
+    "explanation": "A (5 poin): Empati + solusi = pelayanan prima. B (2 poin): Pasif, kurang responsif. C (1 poin): Tidak profesional. D (1 poin): Merusak citra. E (2 poin): Menghindari masalah."
+  },
+  {
+    "question": "Anda menemukan sistem komputer sedang down saat banyak warga antre. Tindakan yang paling tepat adalah...",
+    "options": {
+      "A": "Menginformasikan kondisi ke warga dan berikan alternatif solusi",
+      "B": "Diam saja dan tunggu sistem normal sendiri",
+      "C": "Menyuruh warga pulang dan datang lain hari",
+      "D": "Memproses manual tanpa arahan dari atasan",
+      "E": "Mengeluh di media sosial tentang sistem yang buruk"
+    },
+    "answer": "A",
+    "explanation": "A (5 poin): Transparan + proaktif + solusi alternatif. B (2 poin): Tidak informatif. C (2 poin): Tidak helpful. D (3 poin): Risiko tanpa arahan. E (1 poin): Tidak profesional."
+  },
+  {
+    "question": "Seorang warga meminta layanan di luar jam kerja karena keadaan darurat. Anda yang sedang lembur melihat ini. Tindakan Anda adalah...",
+    "options": {
+      "A": "Menolak sopan dan menyuruh datang besok pagi",
+      "B": "Membantu sesuai kemampuan dengan tetap mengikuti prosedur",
+      "C": "Menolak dan mengatakan ini bukan wewenang Anda",
+      "D": "Membantu tanpa prosedur karena kasihan",
+      "E": "Menyuruhnya mencari bantuan di kantor lain"
+    },
+    "answer": "B",
+    "explanation": "A (2 poin): Kurang helpful. B (5 poin): Fleksibel namun tetap prosedural. C (2 poin): Menghindari tanggung jawab. D (2 poin): Melanggar aturan. E (2 poin): Menyerahkan masalah."
+  },
+  {
+    "question": "Anda mendapat keluhan bahwa prosedur di kantor terlalu rumit. Respon terbaik adalah...",
+    "options": {
+      "A": "Menjelaskan bahwa itu bukan salah Anda",
+      "B": "Mencatat masukan dan sampaikan ke atasan untuk evaluasi",
+      "C": "Mengatakan semua kantor punya prosedur yang sama",
+      "D": "Mengabaikan keluhan karena sudah SOP baku",
+      "E": "Menjanjikan perubahan tanpa ada kewenangan"
+    },
+    "answer": "B",
+    "explanation": "A (2 poin): Defensif. B (5 poin): Responsif + konstruktif + channel proper. C (2 poin): Tidak solusi. D (1 poin): Menutup komunikasi. E (2 poin): Janji palsu."
+  },
+  {
+    "question": "Warga membawa surat pengantar dari pejabat tinggi untuk mengurus dokumen yang belum lengkap. Sikap Anda adalah...",
+    "options": {
+      "A": "Segera proses karena ada surat pengantar pejabat",
+      "B": "Proses dengan tetap meminta kelengkapan dokumen sesuai SOP",
+      "C": "Menolak mentah-mentah tanpa penjelasan",
+      "D": "Mengeluhkan beban kerja kepada warga",
+      "E": "Meminta warga menunggu sampai pejabat datang"
+    },
+    "answer": "B",
+    "explanation": "A (1 poin): Melanggar aturan karena tekanan. B (5 poin): Profesional + integritas + tetap hormat. C (2 poin): Kurang komunikatif. D (1 poin): Tidak profesional. E (2 poin): Tidak efisien."
+  }
+]

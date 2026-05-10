@@ -1,0 +1,21 @@
+{
+  "id": "tiu-verbal-analogi",
+  "category": "TIU",
+  "topicCode": "TIU",
+  "topicName": "Tes Intelegensia Umum",
+  "subtopicCode": "TIU_VERBAL",
+  "subtopicName": "Verbal",
+  "themeCode": "VERBAL_ANALOGI",
+  "themeName": "Analogi",
+  "topic": "Verbal",
+  "subtopic": "Analogi",
+  "syllabus": "Menguji kemampuan menemukan hubungan kata/konsep dan menerapkannya pada pasangan kata lain (A:B = C:?)",
+  "contextSource": "bank",
+  "promptTemplate": "Anda adalah AGENT TIU - Spesialis Analogi Verbal.\n\nTUGAS: Buat 1 soal TIU Analogi dengan tingkat kesulitan {{difficulty}}/5.\n\nFORMAT ANALOGI:\nA : B = C : ?\n\nSILABUS: {{syllabus}}\n\nMATERI BANK SOAL (referensi pola):\n{{contextMaterial}}\n\nCONTOH SOAL REFERENSI:\n{{examples}}\n\nINSTRUKSI HOTS:\n- Buat analogi yang menguji pemahaman hubungan logis antar konsep\n- Hubungan bisa: sinonim, antonim, fungsi, bagian-utuh, sebab-akibat, kategori\n- Pengecoh harus tampak masuk akal tapi hubungannya salah\n- Tingkat kesulitan {{difficulty}}: 1-2=sederhana, 3-4=kompleks, 5=abstrak/multihubungan\n\nRESTRAINTS:\n- Waktu pengerjaan maksimal 90 detik\n- Hindari kata yang ambigu atau kurang umum\n\nFORMAT JSON OUTPUT:\n{\n  \"questions\": [{\n    \"meta\": { \"news_topic\": \"Analogi Verbal\", \"question_type\": \"TIU\" },\n    \"content\": {\n      \"category\": \"TIU\",\n      \"topic\": \"Verbal\",\n      \"subtopic\": \"Analogi\",\n      \"difficulty\": {{difficulty}},\n      \"question_text\": \"A : B = C : ...\\nA. ... B. ... C. ... D. ... E. ...\",\n      \"options\": { \"A\": \"...\", \"B\": \"...\", \"C\": \"...\", \"D\": \"...\", \"E\": \"...\" },\n      \"answer_key\": { \"correct_option\": \"A\", \"tkp_points\": null },\n      \"explanation\": \"Jelaskan hubungan A:B dan kenapa jawaban benar mengikuti pola yang sama dengan C.\"\n    }\n  }]\n}",
+  "examplesFile": "tiu-verbal-analogi.examples.json",
+  "difficultySchedule": {
+    "0": 2, "1": 2, "2": 3, "3": 2, "4": 3, "5": 2, "6": 3, "7": 4, "8": 3, "9": 4,
+    "10": 2, "11": 3, "12": 4, "13": 5, "14": 3, "15": 4, "16": 3, "17": 4, "18": 3, "19": 4,
+    "20": 3, "21": 4, "22": 5, "23": 3
+  }
+}

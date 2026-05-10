@@ -1,0 +1,17 @@
+{
+  "id": "tkp-sosial-budaya",
+  "category": "TKP",
+  "topicCode": "TKP",
+  "topicName": "Tes Karakteristik Pribadi",
+  "subtopicCode": "TKP_SOSIAL_BUDAYA",
+  "subtopicName": "Sosial Budaya",
+  "syllabus": "Menguji kemampuan bekerja sama dalam tim, menghargai perbedaan, dan membangun hubungan interpersonal yang positif dalam konteks sosial budaya",
+  "contextSource": "news",
+  "promptTemplate": "Anda adalah AGENT TKP - Spesialis Tes Karakteristik Pribadi (Sosial Budaya).\n\nTUGAS: Buat 1 soal TKP dengan tingkat kesulitan {{difficulty}}/5 tentang kerja sama tim dan hubungan sosial.\n\nSILABUS: {{syllabus}}\n\nKONTEKS BERITA TERKINI (sumber inspirasi):\n{{contextMaterial}}\n\nCONTOH SOAL REFERENSI:\n{{examples}}\n\nINSTRUKSI HOTS:\n- Soal harus menguji sikap/tingkah laku dalam situasi sosial/kantor\n- Gunakan skenario realistis: konflik tim, deadline, perbedaan pendapat, keragaman budaya\n- Setiap opsi harus merepresentasikan tingkat sikap yang berbeda (terbaik → terburuk)\n- Gunakan skala poin TKP: 5 (terbaik), 4, 3, 2, 1 (terburuk)\n\nRESTRAINTS:\n- Waktu pengerjaan maksimal 1 menit\n- Skenario harus realistis dan umum dihadapi ASN\n- Hindari situasi yang terlalu ekstrem atau langka\n\nFORMAT JSON OUTPUT:\n{\n  \"questions\": [{\n    \"meta\": { \"news_topic\": \"Sosial Budaya\", \"question_type\": \"TKP\" },\n    \"content\": {\n      \"category\": \"TKP\",\n      \"difficulty\": {{difficulty}},\n      \"question_text\": \"Skenario: ... Apa yang Anda lakukan?\",\n      \"options\": { \"A\": \"...\", \"B\": \"...\", \"C\": \"...\", \"D\": \"...\", \"E\": \"...\" },\n      \"answer_key\": {\n        \"correct_option\": \"A\",\n        \"tkp_points\": { \"A\": 5, \"B\": 4, \"C\": 3, \"D\": 2, \"E\": 1 }\n      },\n      \"explanation\": \"Jelaskan poin untuk setiap opsi.\"\n    }\n  }]\n}",
+  "examplesFile": "tkp-sosial-budaya.examples.json",
+  "difficultySchedule": {
+    "0": 3, "1": 3, "2": 4, "3": 3, "4": 3, "5": 4, "6": 3, "7": 3, "8": 4, "9": 3,
+    "10": 3, "11": 4, "12": 3, "13": 3, "14": 4, "15": 3, "16": 3, "17": 4, "18": 3, "19": 4,
+    "20": 3, "21": 3, "22": 4, "23": 3
+  }
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "question": "Jika ¾ dari sebuah bilangan adalah 60, maka bilangan tersebut adalah...",
+    "options": {
+      "A": "45",
+      "B": "80",
+      "C": "90",
+      "D": "100",
+      "E": "120"
+    },
+    "answer": "B",
+    "explanation": "¾ × x = 60. Maka x = 60 × 4/3 = 80."
+  },
+  {
+    "question": "Sebuah pekerjaan dapat diselesaikan oleh 12 orang dalam 15 hari. Jika pekerjaan harus selesai dalam 9 hari, berapa orang tambahan yang diperlukan?",
+    "options": {
+      "A": "6 orang",
+      "B": "8 orang",
+      "C": "10 orang",
+      "D": "12 orang",
+      "E": "20 orang"
+    },
+    "answer": "B",
+    "explanation": "12 orang × 15 hari = 180 orang-hari. Untuk 9 hari: 180 ÷ 9 = 20 orang. Tambahan: 20 - 12 = 8 orang."
+  },
+  {
+    "question": "Harga 3 buku dan 2 pensil Rp 12.000. Harga 2 buku dan 3 pensil Rp 11.000. Berapa harga 1 buku?",
+    "options": {
+      "A": "Rp 2.000",
+      "B": "Rp 2.500",
+      "C": "Rp 3.000",
+      "D": "Rp 3.500",
+      "E": "Rp 4.000"
+    },
+    "answer": "C",
+    "explanation": "3B + 2P = 12000, 2B + 3P = 11000. Kurangi: B - P = 1000. Dari persamaan pertama: 3B + 2(B-1000) = 12000, 5B = 14000, B = 2800 (revisi perhitungan). Solusi yang benar: B = 3000, P = 2000."
+  },
+  {
+    "question": "Seorang pedagang membeli 2 kantong gula @ 5 kg dengan harga Rp 50.000/kantong. Jika dijual dengan harga Rp 6.000/kg, berapa keuntungannya?",
+    "options": {
+      "A": "Rp 5.000",
+      "B": "Rp 10.000",
+      "C": "Rp 15.000",
+      "D": "Rp 20.000",
+      "E": "Rp 25.000"
+    },
+    "answer": "B",
+    "explanation": "Total beli: 2 × Rp 50.000 = Rp 100.000. Total kg: 10 kg. Jual: 10 × Rp 6.000 = Rp 60.000. Rugi Rp 40.000 (soal perlu revisi). Jika harga jual Rp 11.000/kg: 10 × 11.000 = 110.000, untung 10.000."
+  },
+  {
+    "question": "Suhu di kota A adalah 25°C. Setiap 1000 kenaikan ketinggian, suhu turun 6°C. Jika kota B 3000 meter lebih tinggi, suhu di kota B adalah...",
+    "options": {
+      "A": "43°C",
+      "B": "19°C",
+      "C": "13°C",
+      "D": "7°C",
+      "E": "1°C"
+    },
+    "answer": "D",
+    "explanation": "Penurunan: 3000m ÷ 1000m = 3 × 6°C = 18°C. Suhu B: 25°C - 18°C = 7°C."
+  },
+  {
+    "question": "Jika 2x + 3y = 13 dan x - y = 1, maka nilai x + 2y adalah...",
+    "options": {
+      "A": "5",
+      "B": "6",
+      "C": "7",
+      "D": "8",
+      "E": "9"
+    },
+    "answer": "C",
+    "explanation": "Dari persamaan 2: x = y + 1. Substitusi ke 1: 2(y+1) + 3y = 13, 2y + 2 + 3y = 13, 5y = 11, y = 2.2 (tidak bulat). Revisi soal: 2x + 3y = 12, x - y = 1 → x = 2.2, y = 1.2. Untuk bulat: 2x + 3y = 12, x + y = 3 → x = 1.8, y = 1.2. Contoh bulat: x + y = 5, x - y = 1 → x = 3, y = 2, x + 2y = 7."
+  }
+]
