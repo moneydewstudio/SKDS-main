@@ -182,36 +182,13 @@ export class MultiKeyGeminiClient {
       weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' 
     });
     
-    let prompt = '';
+    // Google Search/grounding disabled - returns simulation context only
+    console.log('[MultiKeyClient] News fetch disabled, using simulation context');
     
-    if (query && query.trim().length > 0) {
-      prompt = `Cari berita terkini, faktual, dan mendalam mengenai topik "${query}" di Indonesia.
-      Fokus pada data dan fakta yang relevan untuk materi ujian CPNS (TWK/TIU/TKP).
-      Berikan ringkasan padat tentang isu ini.
-      Jangan buat soal, hanya materi sumber.`;
-    } else {
-      prompt = `Cari berita terpopuler Indonesia hari ini (${today}). 
-      Analisis 3 isu krusial (Ekonomi, Politik, Sosial) yang cocok untuk dijadikan bahan ujian CPNS (TWK/TIU/TKP).
-      Berikan ringkasan padat dan mendalam untuk setiap topik, termasuk data faktual jika ada.
-      Jangan buat soal, hanya materi sumber.`;
-    }
-
-    try {
-      const result = await this.generateJSON(prompt, true);
-      
-      // Try to extract grounding chunks from the last successful call
-      // Note: We'd need to track this in the method above
-      return `CONTEXT MATERIAL (Source: Gemini Grounding - ${query || 'Trending'}):
-${JSON.stringify(result, null, 2)}`;
-      
-    } catch (error: any) {
-      console.warn("[MultiKeyClient] All keys failed for news fetch, using simulation:", error);
-      
-      return `CONTEXT MATERIAL (Simulation Mode - ${today}):
+    return `CONTEXT MATERIAL (Simulation Mode - ${today}):
     Isu 1: Transformasi Digital Birokrasi. Pemerintah mempercepat integrasi data nasional (Satu Data Indonesia) untuk efisiensi layanan publik.
     Isu 2: Ketahanan Pangan Nasional. Fokus pada diversifikasi pangan lokal mengurangi ketergantungan impor beras di tengah cuaca ekstrem.
     Isu 3: Etika Digital ASN. Peningkatan kasus pelanggaran netralitas ASN di media sosial menjelang tahun politik.`;
-    }
   }
 
   public getStatus(): ApiKeyStatus[] {
