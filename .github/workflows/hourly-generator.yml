@@ -59,7 +59,7 @@ jobs:
             QUERY_FLAG="--query=${{ github.event.inputs.query }}"
           fi
           
-          npx ts-node scripts/hourlyWorker.ts $FORCE_FLAG $QUERY_FLAG
+          npx tsx scripts/hourlyWorker.ts $FORCE_FLAG $QUERY_FLAG
       
       - name: Upload logs on failure
         if: failure()

@@ -7,10 +7,10 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "worker": "ts-node scripts/hourlyWorker.ts",
-    "worker:force": "ts-node scripts/hourlyWorker.ts --force",
-    "worker:status": "ts-node scripts/hourlyWorker.ts --status",
-    "worker:reset-keys": "ts-node scripts/hourlyWorker.ts --reset-keys"
+    "worker": "tsx scripts/hourlyWorker.ts",
+    "worker:force": "tsx scripts/hourlyWorker.ts --force",
+    "worker:status": "tsx scripts/hourlyWorker.ts --status",
+    "worker:reset-keys": "tsx scripts/hourlyWorker.ts --reset-keys"
   },
   "dependencies": {
     "react": "^19.2.3",
@@ -24,6 +24,7 @@
     "@vitejs/plugin-react": "^5.0.0",
     "typescript": "~5.8.2",
     "vite": "^6.2.0",
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.0"
   }
 }
