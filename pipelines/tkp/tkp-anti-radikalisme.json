@@ -8,7 +8,7 @@
   "topic": "Tes Karakteristik Pribadi",
   "subtopic": "Anti Radikalisme",
   "syllabus": "Menguji kemampuan mengenali dan menolak paham radikal, mempertahankan sikap moderat, dan menjaga stabilitas sosial",
-  "contextSource": "news",
+  "contextSource": "bank",
   "promptTemplate": "Anda adalah AGENT TKP - Spesialis Anti Radikalisme.\n\nTUGAS: Buat 1 soal TKP dengan tingkat kesulitan {{difficulty}}/5 tentang anti radikalisme.\n\nSILABUS: {{syllabus}}\n\nKONTEKS BERITA TERKINI (sumber inspirasi):\n{{contextMaterial}}\n\nCONTOH SOAL REFERENSI:\n{{examples}}\n\nINSTRUKSI HOTS:\n- Soal harus menguji sikap moderat dan penolakan radikalisme\n- Gunakan skenario: ajakan ekstrem, diskusi radikal, isu sensitif\n- Setiap opsi merepresentasikan tingkat moderasi (5=sangat moderat/teguh, 1=radikal/lemah)\n- Fokus pada: toleransi, dialog, penolakan kekerasan, netralitas ASN\n\nRESTRAINTS:\n- Waktu pengerjaan maksimal 1 menit\n- Hindari soal yang memicu konflik agama/ideologi\n\nFORMAT JSON OUTPUT:\n{\n  \"questions\": [{\n    \"meta\": { \"news_topic\": \"Anti Radikalisme\", \"question_type\": \"TKP\" },\n    \"content\": {\n      \"category\": \"TKP\",\n      \"topic\": \"Tes Karakteristik Pribadi\",\n      \"subtopic\": \"Anti Radikalisme\",\n      \"difficulty\": {{difficulty}},\n      \"question_text\": \"...\",\n      \"options\": { \"A\": \"...\", \"B\": \"...\", \"C\": \"...\", \"D\": \"...\", \"E\": \"...\" },\n      \"answer_key\": {\n        \"correct_option\": \"A\",\n        \"tkp_points\": { \"A\": 5, \"B\": 4, \"C\": 3, \"D\": 2, \"E\": 1 }\n      },\n      \"explanation\": \"Jelaskan poin untuk setiap opsi.\"\n    }\n  }]\n}",
   "examplesFile": "tkp-anti-radikalisme.examples.json",
   "difficultySchedule": {

@@ -8,7 +8,7 @@
   "topic": "Tes Wawasan Kebangsaan",
   "subtopic": "UUD 1945",
   "syllabus": "Menguji pemahaman tentang UUD 1945 sebagai konstitusi negara, sistem ketatanegaraan, dan hak serta kewajiban warga negara",
-  "contextSource": "news",
+  "contextSource": "bank",
   "promptTemplate": "Anda adalah AGENT TWK - Spesialis UUD 1945.\n\nTUGAS: Buat 1 soal TWK dengan tingkat kesulitan {{difficulty}}/5 tentang UUD 1945.\n\nTOPIK: {{topic}} - {{subtopic}}\nSILABUS: {{syllabus}}\n\nKONTEKS BERITA TERKINI (sumber inspirasi):\n{{contextMaterial}}\n\nCONTOH SOAL REFERENSI:\n{{examples}}\n\nINSTRUKSI HOTS:\n- Soal harus menguji pemahaman konstitusional, bukan hafalan pasal\n- Gunakan isu kontemporer yang berkaitan dengan ketatanegaraan\n- Fokus pada: pembagian kekuasaan, hak asasi, demokrasi\n- Pengecoh harus menggambarkan misinterpretasi umum UUD 1945\n\nRESTRAINTS:\n- Waktu pengerjaan maksimal 1 menit\n- Fokus pada prinsip, bukan nomor pasal\n- Teks soal harus padat dan jelas\n\nFORMAT JSON OUTPUT:\n{\n  \"questions\": [{\n    \"meta\": { \"news_topic\": \"UUD 1945\", \"question_type\": \"TWK\" },\n    \"content\": {\n      \"category\": \"TWK\",\n      \"topic\": \"Tes Wawasan Kebangsaan\",\n      \"subtopic\": \"UUD 1945\",\n      \"difficulty\": {{difficulty}},\n      \"question_text\": \"...\",\n      \"options\": { \"A\": \"...\", \"B\": \"...\", \"C\": \"...\", \"D\": \"...\", \"E\": \"...\" },\n      \"answer_key\": { \"correct_option\": \"B\", \"tkp_points\": null },\n      \"explanation\": \"Jelaskan berdasarkan prinsip konstitusi.\"\n    }\n  }]\n}",
   "examplesFile": "twk-uud1945.examples.json",
   "difficultySchedule": {

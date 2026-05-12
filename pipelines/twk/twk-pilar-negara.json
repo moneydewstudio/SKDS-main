@@ -8,7 +8,7 @@
   "topic": "Tes Wawasan Kebangsaan",
   "subtopic": "Pilar Negara",
   "syllabus": "Menguji pemahaman tentang empat pilar kehidupan bernegara: Pancasila, UUD 1945, NKRI, dan Bhinneka Tunggal Ika serta keterkaitannya",
-  "contextSource": "news",
+  "contextSource": "bank",
   "promptTemplate": "Anda adalah AGENT TWK - Spesialis Pilar Negara.\n\nTUGAS: Buat 1 soal TWK dengan tingkat kesulitan {{difficulty}}/5 tentang Pilar Negara.\n\nSILABUS: {{syllabus}}\n\nKONTEKS BERITA TERKINI (sumber inspirasi):\n{{contextMaterial}}\n\nCONTOH SOAL REFERENSI:\n{{examples}}\n\nINSTRUKSI HOTS:\n- Soal harus menguji pemahaman integrasi keempat pilar (bukan hafalan)\n- Fokus pada: hubungan antar pilar, sinergi, implementasi konkret\n- Gunakan isu aktual yang melibatkan multi-pilar\n- Pengecoh harus menggambarkan pemahaman parsial (hanya 1-2 pilar)\n\nRESTRAINTS:\n- Waktu pengerjaan maksimal 1 menit\n- Hindari soal yang hanya menanyakan daftar pilar\n\nFORMAT JSON OUTPUT:\n{\n  \"questions\": [{\n    \"meta\": { \"news_topic\": \"Pilar Negara\", \"question_type\": \"TWK\" },\n    \"content\": {\n      \"category\": \"TWK\",\n      \"topic\": \"Tes Wawasan Kebangsaan\",\n      \"subtopic\": \"Pilar Negara\",\n      \"difficulty\": {{difficulty}},\n      \"question_text\": \"...\",\n      \"options\": { \"A\": \"...\", \"B\": \"...\", \"C\": \"...\", \"D\": \"...\", \"E\": \"...\" },\n      \"answer_key\": { \"correct_option\": \"A\", \"tkp_points\": null },\n      \"explanation\": \"Jelaskan keterkaitan pilar negara yang relevan.\"\n    }\n  }]\n}",
   "examplesFile": "twk-pilar-negara.examples.json",
   "difficultySchedule": {

@@ -8,7 +8,7 @@
   "topic": "Tes Wawasan Kebangsaan",
   "subtopic": "Pancasila",
   "syllabus": "Menguji pemahaman tentang Pancasila sebagai dasar negara, ideologi, dan nilai-nilai luhur bangsa Indonesia",
-  "contextSource": "news",
+  "contextSource": "bank",
   "promptTemplate": "Anda adalah AGENT TWK - Spesialis Pancasila.\n\nTUGAS: Buat 1 soal TWK dengan tingkat kesulitan {{difficulty}}/5 tentang Pancasila.\n\nTOPIK: {{topic}} - {{subtopic}}\nSILABUS: {{syllabus}}\n\nKONTEKS BERITA TERKINI (sumber inspirasi):\n{{contextMaterial}}\n\nCONTOH SOAL REFERENSI:\n{{examples}}\n\nINSTRUKSI HOTS:\n- Soal harus menguji pemahaman mendalam tentang nilai-nilai Pancasila\n- Gunakan kasus kontemporer yang relevan dengan sila-sila Pancasila\n- Fokus pada aplikasi praktis Pancasila dalam kehidupan bermasyarakat\n- Pengecoh harus menggambarkan kesalahpahaman umum tentang Pancasila\n\nRESTRAINTS:\n- Waktu pengerjaan maksimal 1 menit\n- Hindari hafalan buta, fokus pada pemahaman\n- Teks soal harus padat dan jelas\n\nFORMAT JSON OUTPUT:\n{\n  \"questions\": [{\n    \"meta\": { \"news_topic\": \"Pancasila\", \"question_type\": \"TWK\" },\n    \"content\": {\n      \"category\": \"TWK\",\n      \"topic\": \"Tes Wawasan Kebangsaan\",\n      \"subtopic\": \"Pancasila\",\n      \"difficulty\": {{difficulty}},\n      \"question_text\": \"...\",\n      \"options\": { \"A\": \"...\", \"B\": \"...\", \"C\": \"...\", \"D\": \"...\", \"E\": \"...\" },\n      \"answer_key\": { \"correct_option\": \"A\", \"tkp_points\": null },\n      \"explanation\": \"Jelaskan kaitan dengan nilai-nilai Pancasila.\"\n    }\n  }]\n}",
   "examplesFile": "twk-pancasila.examples.json",
   "difficultySchedule": {

@@ -8,7 +8,7 @@
   "topic": "Tes Wawasan Kebangsaan",
   "subtopic": "Bahasa Negara",
   "syllabus": "Menguji pemahaman tentang Bahasa Indonesia sebagai bahasa negara, fungsi, kedudukan, dan penggunaannya dalam konteks kebangsaan",
-  "contextSource": "news",
+  "contextSource": "bank",
   "promptTemplate": "Anda adalah AGENT TWK - Spesialis Bahasa Negara.\n\nTUGAS: Buat 1 soal TWK dengan tingkat kesulitan {{difficulty}}/5 tentang Bahasa Negara.\n\nSILABUS: {{syllabus}}\n\nKONTEKS BERITA TERKINI (sumber inspirasi):\n{{contextMaterial}}\n\nCONTOH SOAL REFERENSI:\n{{examples}}\n\nINSTRUKSI HOTS:\n- Soal harus menguji pemahaman fungsi bahasa Indonesia sebagai alat pemersatu\n- Fokus pada: UU Bahasa, fungsi nasional, diglossia, pelestarian\n- Gunakan isu aktual terkait bahasa dan identitas nasional\n- Pengecoh harus menggambarkan pemahaman etnosentris/regionalsentris\n\nRESTRAINTS:\n- Waktu pengerjaan maksimal 1 menit\n- Hindari soal yang diskriminatif terhadap bahasa daerah\n\nFORMAT JSON OUTPUT:\n{\n  \"questions\": [{\n    \"meta\": { \"news_topic\": \"Bahasa Negara\", \"question_type\": \"TWK\" },\n    \"content\": {\n      \"category\": \"TWK\",\n      \"topic\": \"Tes Wawasan Kebangsaan\",\n      \"subtopic\": \"Bahasa Negara\",\n      \"difficulty\": {{difficulty}},\n      \"question_text\": \"...\",\n      \"options\": { \"A\": \"...\", \"B\": \"...\", \"C\": \"...\", \"D\": \"...\", \"E\": \"...\" },\n      \"answer_key\": { \"correct_option\": \"A\", \"tkp_points\": null },\n      \"explanation\": \"Jelaskan konsep bahasa negara yang relevan.\"\n    }\n  }]\n}",
   "examplesFile": "twk-bahasa-negara.examples.json",
   "difficultySchedule": {

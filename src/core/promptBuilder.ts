@@ -17,20 +17,6 @@ export const buildContext = async (
   query: string = ''
 ): Promise<string> => {
   switch (pipeline.contextSource) {
-    case 'news':
-      try {
-        return await getClient().fetchNewsContext(query);
-      } catch (error) {
-        console.warn('[promptBuilder] News fetch failed with all keys, using fallback:', error);
-        const today = new Date().toLocaleDateString('id-ID', { 
-          weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' 
-        });
-        return `CONTEXT MATERIAL (Simulation Mode - ${today}):
-    Isu 1: Transformasi Digital Birokrasi. Pemerintah mempercepat integrasi data nasional (Satu Data Indonesia) untuk efisiensi layanan publik.
-    Isu 2: Ketahanan Pangan Nasional. Fokus pada diversifikasi pangan lokal mengurangi ketergantungan impor beras di tengah cuaca ekstrem.
-    Isu 3: Etika Digital ASN. Peningkatan kasus pelanggaran netralitas ASN di media sosial menjelang tahun politik.`;
-      }
-    
     case 'bank':
       return `REFERENSI BANK SOAL:\n${BANK_SOAL_1.substring(0, 15000)}`;
     

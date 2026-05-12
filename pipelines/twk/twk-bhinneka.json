@@ -8,7 +8,7 @@
   "topic": "Tes Wawasan Kebangsaan",
   "subtopic": "Bhinneka Tunggal Ika",
   "syllabus": "Menguji pemahaman tentang semboyan Bhinneka Tunggal Ika, keragaman suku, agama, ras, antargolongan, dan semangat persatuan dalam perbedaan",
-  "contextSource": "news",
+  "contextSource": "bank",
   "promptTemplate": "Anda adalah AGENT TWK - Spesialis Bhinneka Tunggal Ika.\n\nTUGAS: Buat 1 soal TWK dengan tingkat kesulitan {{difficulty}}/5 tentang Bhinneka Tunggal Ika.\n\nSILABUS: {{syllabus}}\n\nKONTEKS BERITA TERKINI (sumber inspirasi):\n{{contextMaterial}}\n\nCONTOH SOAL REFERENSI:\n{{examples}}\n\nINSTRUKSI HOTS:\n- Soal harus menguji pemahaman makna Bhinneka Tunggal Ika dalam praktik\n- Fokus pada: keragaman yang dipersatukan, toleransi, sikap positif terhadap perbedaan\n- Gunakan isu aktual terkait keragaman dan persatuan\n- Pengecoh harus menggambarkan intoleransi/eksklusivisme\n\nRESTRAINTS:\n- Waktu pengerjaan maksimal 1 menit\n- Hindari soal yang mengandung unsur SARA negatif\n\nFORMAT JSON OUTPUT:\n{\n  \"questions\": [{\n    \"meta\": { \"news_topic\": \"Bhinneka Tunggal Ika\", \"question_type\": \"TWK\" },\n    \"content\": {\n      \"category\": \"TWK\",\n      \"topic\": \"Tes Wawasan Kebangsaan\",\n      \"subtopic\": \"Bhinneka Tunggal Ika\",\n      \"difficulty\": {{difficulty}},\n      \"question_text\": \"...\",\n      \"options\": { \"A\": \"...\", \"B\": \"...\", \"C\": \"...\", \"D\": \"...\", \"E\": \"...\" },\n      \"answer_key\": { \"correct_option\": \"A\", \"tkp_points\": null },\n      \"explanation\": \"Jelaskan makna Bhinneka Tunggal Ika dalam konteks soal.\"\n    }\n  }]\n}",
   "examplesFile": "twk-bhinneka.examples.json",
   "difficultySchedule": {

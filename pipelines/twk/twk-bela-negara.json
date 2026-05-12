@@ -8,7 +8,7 @@
   "topic": "Tes Wawasan Kebangsaan",
   "subtopic": "Bela Negara",
   "syllabus": "Menguji pemahaman tentang konsep bela negara, komponen pertahanan, tanggung jawab warga negara dalam mempertahankan kedaulatan",
-  "contextSource": "news",
+  "contextSource": "bank",
   "promptTemplate": "Anda adalah AGENT TWK - Spesialis Bela Negara.\n\nTUGAS: Buat 1 soal TWK dengan tingkat kesulitan {{difficulty}}/5 tentang Bela Negara.\n\nSILABUS: {{syllabus}}\n\nKONTEKS BERITA TERKINI (sumber inspirasi):\n{{contextMaterial}}\n\nCONTOH SOAL REFERENSI:\n{{examples}}\n\nINSTRUKSI HOTS:\n- Soal harus menguji pemahaman konsep bela negara dalam konteks modern\n- Fokus pada: sikap, perilaku, kontribusi warga negara (bukan hanya militer)\n- Gunakan isu aktual terkait ancaman, disinformasi, atau pertahanan\n- Pengecoh harus menggambarkan pemahaman salah tentang bela negara\n\nRESTRAINTS:\n- Waktu pengerjaan maksimal 1 menit\n- Hindari fokus hanya pada aspek militer/komando\n\nFORMAT JSON OUTPUT:\n{\n  \"questions\": [{\n    \"meta\": { \"news_topic\": \"Bela Negara\", \"question_type\": \"TWK\" },\n    \"content\": {\n      \"category\": \"TWK\",\n      \"topic\": \"Tes Wawasan Kebangsaan\",\n      \"subtopic\": \"Bela Negara\",\n      \"difficulty\": {{difficulty}},\n      \"question_text\": \"...\",\n      \"options\": { \"A\": \"...\", \"B\": \"...\", \"C\": \"...\", \"D\": \"...\", \"E\": \"...\" },\n      \"answer_key\": { \"correct_option\": \"A\", \"tkp_points\": null },\n      \"explanation\": \"Jelaskan konsep bela negara yang relevan.\"\n    }\n  }]\n}",
   "examplesFile": "twk-bela-negara.examples.json",
   "difficultySchedule": {

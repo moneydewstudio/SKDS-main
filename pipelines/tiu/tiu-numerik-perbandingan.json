@@ -10,7 +10,7 @@
   "topic": "Numerik",
   "subtopic": "Perbandingan",
   "syllabus": "Menyelesaikan masalah perbandingan senilai dan berbalik nilai dalam konteks kehidupan nyata",
-  "contextSource": "news",
+  "contextSource": "bank",
   "promptTemplate": "Anda adalah AGENT TIU NUMERIK - Spesialis Perbandingan.\n\nTUGAS: Buat 1 soal perbandingan senilai/berbalik nilai dengan tingkat kesulitan {{difficulty}}/5.\n\nTOPIK: {{topic}} - {{subtopic}}\nSILABUS: {{syllabus}}\n\nKONTEKS BERITA (untuk inspirasi kontekstual):\n{{contextMaterial}}\n\nCONTOH SOAL REFERENSI:\n{{examples}}\n\nINSTRUKSI HOTS:\n- Gunakan skenario realistis: pekerja dan waktu, harga dan barang, kecepatan dan jarak\n- Pengecoh: rasio terbalik, salah hitung proporsi, atau kelupaan konversi satuan\n\nFORMAT JSON OUTPUT:\n{\n  \"questions\": [{\n    \"meta\": { \"news_topic\": \"Perbandingan\", \"question_type\": \"TIU\" },\n    \"content\": {\n      \"category\": \"TIU\",\n      \"topic\": \"Numerik\",\n      \"subtopic\": \"Perbandingan\",\n      \"difficulty\": {{difficulty}},\n      \"question_text\": \"...\",\n      \"options\": { \"A\": \"...\", \"B\": \"...\", \"C\": \"...\", \"D\": \"...\", \"E\": \"...\" },\n      \"answer_key\": { \"correct_option\": \"C\", \"tkp_points\": null },\n      \"explanation\": \"Jelaskan perhitungan perbandingannya.\"\n    }\n  }]\n}",
   "examplesFile": "tiu-numerik-perbandingan.examples.json",
   "difficultySchedule": {
