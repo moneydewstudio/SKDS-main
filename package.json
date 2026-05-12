@@ -10,7 +10,8 @@
     "worker": "node --import=tsx --import=dotenv/config scripts/hourlyWorker.ts",
     "worker:force": "node --import=tsx --import=dotenv/config scripts/hourlyWorker.ts --force",
     "worker:status": "node --import=tsx --import=dotenv/config scripts/hourlyWorker.ts --status",
-    "worker:reset-keys": "node --import=tsx --import=dotenv/config scripts/hourlyWorker.ts --reset-keys"
+    "worker:reset-keys": "node --import=tsx --import=dotenv/config scripts/hourlyWorker.ts --reset-keys",
+    "test:db": "node --import=tsx --import=dotenv/config scripts/testDb.ts"
   },
   "dependencies": {
     "react": "^19.2.3",

@@ -63,11 +63,11 @@ export const saveBatchToNeon = async (
       console.log('[Neon] Note: subtopics code column:', e.message);
     }
 
-    // Themes table (3rd level hierarchy) - create without FK first
+    // FIXED: Themes table with proper UUID type
     await sql`
       CREATE TABLE IF NOT EXISTS themes (
         id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-        subtopic_id UUID,
+        subtopic_id UUID NOT NULL,
         name TEXT NOT NULL,
         code TEXT,
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -75,15 +75,7 @@ export const saveBatchToNeon = async (
       )
     `;
 
-    // Ensure subtopic_id column exists (migration from old schema)
-    try {
-      await sql`ALTER TABLE themes ADD COLUMN IF NOT EXISTS subtopic_id UUID`;
-    } catch (e) {
-      // Column may already exist
-    }
-
-    // Skip FK constraint - causes issues with existing schema, not needed for functionality
-    console.log('[Neon] Skipping themes FK constraint (optional)');
+    console.log('[Neon] Themes table ready (UUID-based)');
 
     await sql`
       CREATE TABLE IF NOT EXISTS questions (
@@ -168,15 +160,17 @@ export const saveBatchToNeon = async (
         // TIU has 3-level hierarchy with themes
         const themeName = q.content.subtopic || 'General';
         const themeCode = q.meta.theme_code || null;
+        
+        // FIXED: Use subtopic.id directly (UUID → UUID)
         const [theme] = await sql`
           INSERT INTO themes (subtopic_id, name, code)
           VALUES (${subtopic.id}, ${themeName}, ${themeCode})
           ON CONFLICT (subtopic_id, name) DO UPDATE SET 
-            name = EXCLUDED.name,
             code = EXCLUDED.code
           RETURNING id
         `;
         themeId = theme.id;
+        console.log(`[Debug] Created/found theme: ${themeName} with ID: ${themeId}`);
       }
       // TWK and TKP have 2-level hierarchy: theme_id remains null
 
@@ -273,6 +267,8 @@ export const saveBatchToNeon = async (
         `;
       }
     }
+
+    console.log(`[Neon] Successfully saved ${questions.length} questions`);
 
   } catch (error: any) {
     console.error('Neon DB Error:', error);
