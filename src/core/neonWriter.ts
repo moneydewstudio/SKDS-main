@@ -65,14 +65,14 @@ export const saveBatchToNeon = async (
 
     // FIXED: Themes table with proper UUID type
     await sql`
-      CREATE TABLE IF NOT EXISTS themes (
-        id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-        subtopic_id UUID NOT NULL,
-        name TEXT NOT NULL,
-        code TEXT,
-        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-        UNIQUE(subtopic_id, name)
-      )
+    CREATE TABLE IF NOT EXISTS themes (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    subtopic_id INTEGER NOT NULL,  -- Match existing subtopics.id type
+    name TEXT NOT NULL,
+    code TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE(subtopic_id, name)
+  )
     `;
 
     console.log('[Neon] Themes table ready (UUID-based)');
