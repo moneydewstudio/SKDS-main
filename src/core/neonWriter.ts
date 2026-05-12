@@ -62,18 +62,35 @@ export const saveBatchToNeon = async (
       console.log('[Neon] Note: subtopics code column already exists');
     }
 
-    // FIXED: Themes table with INTEGER subtopic_id to match existing schema
-    await sql`
-      CREATE TABLE IF NOT EXISTS themes (
-        id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-        subtopic_id INTEGER NOT NULL REFERENCES subtopics(id) ON DELETE CASCADE,
-        name TEXT NOT NULL,
-        code TEXT,
-        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-        UNIQUE(subtopic_id, name)
-      )
-    `;
+   // Add code column if missing (migration from old schema)
+try {
+  await sql`ALTER TABLE subtopics ADD COLUMN IF NOT EXISTS code TEXT`;
+  console.log('[Neon] Added code column to subtopics');
+} catch (e: any) {
+  console.log('[Neon] Note: subtopics code column already exists');
+}
 
+// FIXED: Drop and recreate themes table to fix schema mismatch
+try {
+  await sql`DROP TABLE IF EXISTS themes CASCADE`;
+  console.log('[Neon] Dropped existing themes table (schema mismatch)');
+} catch (e) {
+  console.log('[Neon] No themes table to drop');
+}
+
+// Create themes table with correct INTEGER subtopic_id
+await sql`
+  CREATE TABLE themes (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    subtopic_id INTEGER NOT NULL REFERENCES subtopics(id) ON DELETE CASCADE,
+    name TEXT NOT NULL,
+    code TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE(subtopic_id, name)
+  )
+`;
+
+console.log('[Neon] Themes table recreated (INTEGER subtopic_id, UUID id)');
     console.log('[Neon] Themes table ready (INTEGER subtopic_id, UUID id)');
 
     // FIXED: Questions table matching existing schema
