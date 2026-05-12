@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { runAgentWorkflow, ProcessStage } from './services/orchestratorService';
 import { saveBatchToNeon } from './services/neonService';
-import { GeneratedQuestion, AppState } from '@/core/types';
+import { AppState, GeneratedQuestion } from "./src/core/types";
 import InputSection from './components/InputSection';
 import QuestionListView from './components/QuestionListView';
 import NeonConfigModal from './components/NeonConfigModal';
