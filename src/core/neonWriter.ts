@@ -191,6 +191,7 @@ export const saveBatchToNeon = async (
       const questionCode = q.meta.pipeline_code || null;
 
       // Insert question with theme_id (null for TWK/TKP)
+      // Insert question with theme_id (null for TWK/TKP) - handle duplicates
       const [insertedQ] = await sql`
         INSERT INTO questions (
           topic_id, 
@@ -215,6 +216,10 @@ export const saveBatchToNeon = async (
           ${questionCode},
           true
         )
+        ON CONFLICT (code) DO UPDATE SET 
+          updated_at = CURRENT_TIMESTAMP,
+          theme_id = EXCLUDED.theme_id,
+          difficulty = EXCLUDED.difficulty
         RETURNING id
       `;
 
