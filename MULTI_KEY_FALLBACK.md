@@ -13,8 +13,9 @@ The system now supports **automatic fallback** across multiple Gemini API keys. 
 
 ### 2. Smart Failure Handling
 - **Failure Threshold**: Key deactivated after 3 consecutive failures
-- **Cooldown Period**: 1 minute before retrying a failed key
-- **Automatic Recovery**: Keys re-enter rotation after cooldown
+- **Dynamic Retry Delay**: Parses retry delay from API error response (e.g., "Please retry in 40s")
+- **Fallback Cooldown**: 1 minute default cooldown if API doesn't provide retry delay
+- **Automatic Recovery**: Keys re-enter rotation after cooldown/retry delay
 - **Logging**: All key attempts logged with masked keys for security
 
 ### 3. Health Monitoring
@@ -122,6 +123,15 @@ Use different Gemini API versions by configuring keys from different projects wi
 
 ## Implementation Details
 
+### Dynamic Retry Delay Parsing
+When the API returns a quota/rate limit error, the system extracts the retry delay from the error message:
+- Format: `"Please retry in 40.473552882s."`
+- Also parses from JSON: `"retryDelay":"40s"`
+- Converts to milliseconds and stores as `retryUntil` timestamp
+- Falls back to 1-minute cooldown if parsing fails
+
+This ensures the system respects the API's guidance on when to retry, reducing unnecessary failed attempts.
+
 ### Key Masking
 For security, logs only show the first 8 characters of each key:
 ```
@@ -129,11 +139,11 @@ Using key: AIzaSyA...
 ```
 
 ### Failure Types That Trigger Fallback
-- Rate limit exceeded (429)
-- Quota exceeded (403)
-- Network errors
-- Timeout errors
-- Invalid API key errors
+- Rate limit exceeded (429) - Uses API-provided retry delay
+- Quota exceeded (403) - Uses API-provided retry delay
+- Network errors - Uses default 1-minute cooldown
+- Timeout errors - Uses default 1-minute cooldown
+- Invalid API key errors - Uses default 1-minute cooldown
 
 ### What Does NOT Trigger Fallback
 - Content policy violations (these are input issues)
