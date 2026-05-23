@@ -8,6 +8,7 @@ export interface ApiKeyStatus {
   consecutiveFailures: number;
   isActive: boolean;
   lastError?: string;
+  retryUntil?: number; // Timestamp until which this key should not be used
 }
 
 export class MultiKeyGeminiClient {
@@ -15,7 +16,7 @@ export class MultiKeyGeminiClient {
   private currentIndex: number = 0;
   private readonly maxRetries: number;
   private readonly failureThreshold: number = 3;
-  private readonly cooldownMs: number = 60000; // 1 minute cooldown
+  private readonly defaultCooldownMs: number = 60000; // 1 minute default cooldown
 
   constructor(apiKeys: string[], maxRetries: number = 3) {
     if (!apiKeys || apiKeys.length === 0) {
@@ -41,9 +42,11 @@ export class MultiKeyGeminiClient {
       
       if (!status.isActive) continue;
       
-      // Check cooldown period
-      const cooldownElapsed = now - status.lastUsed > this.cooldownMs;
-      if (status.consecutiveFailures > 0 && !cooldownElapsed) {
+      // Check retry delay from API response if available, otherwise use default cooldown
+      const isInRetryDelay = status.retryUntil && now < status.retryUntil;
+      const isInDefaultCooldown = status.consecutiveFailures > 0 && (now - status.lastUsed) < this.defaultCooldownMs;
+      
+      if (isInRetryDelay || isInDefaultCooldown) {
         continue;
       }
       
@@ -69,10 +72,38 @@ export class MultiKeyGeminiClient {
     status.consecutiveFailures++;
     status.lastError = error;
     
+    // Try to extract retry delay from error response
+    const retryDelay = this.extractRetryDelay(error);
+    if (retryDelay) {
+      status.retryUntil = Date.now() + retryDelay;
+      console.log(`[MultiKeyClient] API key will retry after ${retryDelay / 1000}s`);
+    }
+    
     // Deactivate key if it exceeds failure threshold
     if (status.consecutiveFailures >= this.failureThreshold) {
       status.isActive = false;
       console.warn(`[MultiKeyClient] API key deactivated after ${this.failureThreshold} consecutive failures`);
+    }
+  }
+
+  private extractRetryDelay(errorMsg: string): number | null {
+    try {
+      // Parse the error message to extract retry delay
+      // Format: "Please retry in 40.473552882s." or from details: "retryDelay":"40s"
+      const retryMatch = errorMsg.match(/Please retry in ([\d.]+)s\./);
+      if (retryMatch) {
+        return Math.ceil(parseFloat(retryMatch[1]) * 1000); // Convert to ms, round up
+      }
+      
+      // Try to parse from JSON if the error contains structured details
+      const jsonMatch = errorMsg.match(/"retryDelay":"(\d+)s"/);
+      if (jsonMatch) {
+        return parseInt(jsonMatch[1], 10) * 1000;
+      }
+      
+      return null;
+    } catch {
+      return null;
     }
   }
 
@@ -201,6 +232,7 @@ export class MultiKeyGeminiClient {
         k.isActive = true;
         k.consecutiveFailures = 0;
         k.lastError = undefined;
+        k.retryUntil = undefined;
       }
     });
     console.log("[MultiKeyClient] All failed keys have been reset");
