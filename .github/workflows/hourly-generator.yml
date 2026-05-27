@@ -2,13 +2,13 @@ name: Hourly Question Generator
 
 on:
   schedule:
-    - cron: '0,30 * * * *'  # Run every hour at minute 0
+    - cron: '*/15 * * * *'  # Run every hour at minute 0
   workflow_dispatch:
     inputs:
       force:
         description: 'Force generation even if hour already exists'
         required: false
-        default: 'false'
+        default: 'true'
         type: choice
         options:
           - 'true'
