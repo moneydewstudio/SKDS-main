@@ -42,9 +42,10 @@ export const saveBatchToNeon = async (connectionString: string, questions: Gener
     // TABLE 3: QUESTIONS
     // Columns: id, topic_id, subtopic_id, question_text, difficulty, question_type, 
     // time_limit_seconds, source, is_active, created_at, updated_at
+    // TEAM_036: Changed id from UUID to TEXT for DDMMYYHHMM format
     await sql`
       CREATE TABLE IF NOT EXISTS questions (
-        id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+        id TEXT PRIMARY KEY,
         topic_id UUID REFERENCES topics(id) ON DELETE SET NULL,
         subtopic_id UUID REFERENCES subtopics(id) ON DELETE SET NULL,
         question_text TEXT NOT NULL,
@@ -153,8 +154,18 @@ export const saveBatchToNeon = async (connectionString: string, questions: Gener
           ? q.content.difficulty 
           : 3;
 
+      // TEAM_036: Generate question ID in DDMMYYHHMM format
+      const now = new Date();
+      const day = String(now.getDate()).padStart(2, '0');
+      const month = String(now.getMonth() + 1).padStart(2, '0');
+      const year = String(now.getFullYear()).slice(-2);
+      const hour = String(now.getHours()).padStart(2, '0');
+      const minute = String(now.getMinutes()).padStart(2, '0');
+      const questionId = `${day}${month}${year}${hour}${minute}`;
+
       const [insertedQ] = await sql`
         INSERT INTO questions (
+          id,
           topic_id, 
           subtopic_id, 
           question_text, 
@@ -164,6 +175,7 @@ export const saveBatchToNeon = async (connectionString: string, questions: Gener
           source, 
           is_active
         ) VALUES (
+          ${questionId},
           ${topic.id}, 
           ${subtopic.id}, 
           ${q.content.question_text},
