@@ -42,10 +42,9 @@ export const saveBatchToNeon = async (connectionString: string, questions: Gener
     // TABLE 3: QUESTIONS
     // Columns: id, topic_id, subtopic_id, question_text, difficulty, question_type, 
     // time_limit_seconds, source, is_active, created_at, updated_at
-    // TEAM_036: Changed id from UUID to TEXT for DDMMYYHHMM format
     await sql`
       CREATE TABLE IF NOT EXISTS questions (
-        id TEXT PRIMARY KEY,
+        id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
         topic_id UUID REFERENCES topics(id) ON DELETE SET NULL,
         subtopic_id UUID REFERENCES subtopics(id) ON DELETE SET NULL,
         question_text TEXT NOT NULL,
@@ -154,18 +153,20 @@ export const saveBatchToNeon = async (connectionString: string, questions: Gener
           ? q.content.difficulty 
           : 3;
 
-      // TEAM_036: Generate question ID in DDMMYYHHMM format
-      const now = new Date();
-      const day = String(now.getDate()).padStart(2, '0');
-      const month = String(now.getMonth() + 1).padStart(2, '0');
-      const year = String(now.getFullYear()).slice(-2);
-      const hour = String(now.getHours()).padStart(2, '0');
-      const minute = String(now.getMinutes()).padStart(2, '0');
-      const questionId = `${day}${month}${year}${hour}${minute}`;
+      // TEAM_036: Check for duplicate question by question_text to prevent replacement
+      const existingQuestion = await sql`
+        SELECT id FROM questions 
+        WHERE question_text = ${q.content.question_text}
+        LIMIT 1
+      `;
+
+      if (existingQuestion && existingQuestion.length > 0) {
+        console.log(`[Neon] Skipping duplicate question: ${q.content.question_text.substring(0, 50)}...`);
+        continue; // Skip this question if it already exists
+      }
 
       const [insertedQ] = await sql`
         INSERT INTO questions (
-          id,
           topic_id, 
           subtopic_id, 
           question_text, 
@@ -175,7 +176,6 @@ export const saveBatchToNeon = async (connectionString: string, questions: Gener
           source, 
           is_active
         ) VALUES (
-          ${questionId},
           ${topic.id}, 
           ${subtopic.id}, 
           ${q.content.question_text},

@@ -94,10 +94,9 @@ console.log('[Neon] Themes table recreated (INTEGER subtopic_id, UUID id)');
     console.log('[Neon] Themes table ready (INTEGER subtopic_id, UUID id)');
 
     // FIXED: Questions table matching existing schema
-    // TEAM_036: Changed id from SERIAL to TEXT for DDMMYYHHMM format
     await sql`
       CREATE TABLE IF NOT EXISTS questions (
-        id TEXT PRIMARY KEY,
+        id SERIAL PRIMARY KEY,
         topic_id INTEGER REFERENCES topics(id),
         subtopic_id INTEGER REFERENCES subtopics(id),
         theme_id UUID REFERENCES themes(id) ON DELETE SET NULL,
@@ -226,19 +225,21 @@ console.log('[Neon] Themes table recreated (INTEGER subtopic_id, UUID id)');
         // Generate question code from pipeline info (if available in meta)
         const questionCode = q.meta.pipeline_code || null;
 
-        // TEAM_036: Generate question ID in DDMMYYHHMM format
-        const now = new Date();
-        const day = String(now.getDate()).padStart(2, '0');
-        const month = String(now.getMonth() + 1).padStart(2, '0');
-        const year = String(now.getFullYear()).slice(-2);
-        const hour = String(now.getHours()).padStart(2, '0');
-        const minute = String(now.getMinutes()).padStart(2, '0');
-        const questionId = `${day}${month}${year}${hour}${minute}`;
+        // TEAM_036: Check for duplicate question by question_text to prevent replacement
+        const existingQuestion = await sql`
+          SELECT id FROM questions 
+          WHERE question_text = ${q.content.question_text}
+          LIMIT 1
+        `;
+
+        if (existingQuestion && existingQuestion.length > 0) {
+          console.log(`[Neon] Skipping duplicate question: ${q.content.question_text.substring(0, 50)}...`);
+          continue; // Skip this question if it already exists
+        }
 
         // Insert question with proper type handling
         const questionResult = await sql`
           INSERT INTO questions (
-            id,
             topic_id, 
             subtopic_id, 
             theme_id,
@@ -250,7 +251,6 @@ console.log('[Neon] Themes table recreated (INTEGER subtopic_id, UUID id)');
             code,
             is_active
           ) VALUES (
-            ${questionId},
             ${topic.id}, 
             ${subtopic.id}, 
             ${themeId},

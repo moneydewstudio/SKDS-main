@@ -1,52 +1,66 @@
-# TEAM_036: Question ID Generation Format Change
+# TEAM_036: Question ID Generation Format Change (ROLLED BACK)
 
 ## Team Purpose
 Update question ID generation to use timestamp-based format (DDMMYYHHMM) instead of UUID/SERIAL.
 
-## Change Summary
-Changed question ID generation from UUID (neonService.ts) and SERIAL (neonWriter.ts) to a timestamp-based format: DDMMYYHHMM.
+## ROLLBACK DECISION
+**Status**: ROLLED BACK to legacy SERIAL/UUID ID generation method
 
-## New ID Format
-- **Format**: DDMMYYHHMM (10 digits)
-- **Example**: 0106260556
-  - 01 = day
-  - 06 = month
-  - 26 = year (2026)
-  - 05 = hour
-  - 56 = minutes
+**Reason**: The DDMMYYHHMM format approach was deemed potentially destructive due to:
+- ALTER TABLE migrations could fail on existing databases
+- Mixed ID formats (legacy UUID/SERIAL + new timestamp) create complexity
+- Risk of data loss during schema migrations
 
-## Files Modified
+**Alternative Solution**: Keep legacy ID generation (SERIAL/UUID) and add duplicate question checking to prevent replacement of existing questions.
 
-### 1. services/neonService.ts
-- **Schema Change**: Changed `id UUID PRIMARY KEY DEFAULT gen_random_uuid()` to `id TEXT PRIMARY KEY`
-- **Insertion Logic**: Added timestamp generation before question insertion:
-  ```typescript
-  const now = new Date();
-  const day = String(now.getDate()).padStart(2, '0');
-  const month = String(now.getMonth() + 1).padStart(2, '0');
-  const year = String(now.getFullYear()).slice(-2);
-  const hour = String(now.getHours()).padStart(2, '0');
-  const minute = String(now.getMinutes()).padStart(2, '0');
-  const questionId = `${day}${month}${year}${hour}${minute}`;
-  ```
+## Rollback Changes
 
-### 2. src/core/neonWriter.ts
-- **Schema Change**: Changed `id SERIAL PRIMARY KEY` to `id TEXT PRIMARY KEY`
-- **Insertion Logic**: Added same timestamp generation before question insertion
+### 1. Schema Reversion
+- **services/neonService.ts**: Reverted `id TEXT PRIMARY KEY` back to `id UUID PRIMARY KEY DEFAULT gen_random_uuid()`
+- **services/neonService.ts**: Reverted question_id foreign keys from TEXT back to UUID in related tables
+- **src/core/neonWriter.ts**: Reverted `id TEXT PRIMARY KEY` back to `id SERIAL PRIMARY KEY`
+- **src/core/neonWriter.ts**: Reverted question_id foreign keys from TEXT back to INTEGER in related tables
 
-## Benefits
-- Human-readable IDs that show when a question was generated
-- Easier to track and identify questions by creation time
-- No dependency on database auto-increment or UUID generation
-- Consistent format across both question insertion paths
+### 2. ID Generation Logic Removal
+- Removed DDMMYYHHMM timestamp generation from both files
+- Removed ALTER TABLE migration logic for type conversion
 
-## Migration Notes
-- Existing questions with UUID/SERIAL IDs will need to be migrated if this change is applied to production
-- The schema change requires dropping and recreating the questions table or using ALTER TABLE
-- Foreign key references to questions.id may need adjustment if they expect UUID/INTEGER types
+### 3. Duplicate Prevention (New)
+- Added duplicate question checker before insertion in both files
+- Checks for existing questions by `question_text` to prevent replacement
+- Skips insertion if question with same text already exists
+- Logs skipped duplicates for visibility
+
+## Duplicate Checker Implementation
+```typescript
+// Check for duplicate question by question_text to prevent replacement
+const existingQuestion = await sql`
+  SELECT id FROM questions
+  WHERE question_text = ${q.content.question_text}
+  LIMIT 1
+`;
+
+if (existingQuestion && existingQuestion.length > 0) {
+  console.log(`[Neon] Skipping duplicate question: ${q.content.question_text.substring(0, 50)}...`);
+  continue; // Skip this question if it already exists
+}
+```
+
+## Benefits of Rollback Approach
+- No schema migration risks - existing databases remain stable
+- No mixed ID format complexity
+- Duplicate prevention ensures data integrity without destructive changes
+- Legacy SERIAL/UUID generation is battle-tested and reliable
+
+## Files Modified (Rollback)
+- services/neonService.ts (schema reverted + duplicate checker added)
+- src/core/neonWriter.ts (schema reverted + duplicate checker added)
 
 ## Team Members
 - AI Assistant (Cascade)
 
 ## Date Created
 2026-06-01
+
+## Status
+ROLLED BACK - Using legacy SERIAL/UUID ID generation with duplicate prevention
