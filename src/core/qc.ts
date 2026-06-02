@@ -28,9 +28,12 @@ CHECKLIST KUALITAS & REVISI:
 4. MAKE IT CONCISE: Hapus kata basa-basi, langsung pada inti. Waktu pengerjaan max 1 menit.
 5. ACAK OPSI: Acak ulang posisi jawaban, update answer_key.correct_option.
 6. DIFFICULTY: Pastikan field difficulty (1-5) tetap ada dan valid.
+7. PRESERVE ALL QUESTIONS: JANGAN mengurangi jumlah soal. Semua soal yang diberikan harus dikembalikan.
+8. PRESERVE METADATA: JANGAN menghapus atau mengubah field 'meta' (pipeline_id, pipeline_code, topic_code, subtopic_code, theme_code, news_topic, question_type).
 
 OUTPUT:
 Kembalikan JSON yang sudah divalidasi, dipersulit, dipadatkan, dan diacak.
+PASTIKAN semua soal dikembalikan dan semua metadata dipertahankan.
 HANYA return JSON murni tanpa markdown.
 `;
 

@@ -36,9 +36,12 @@ export const auditAndRefineQuestions = async (draftJsonString: string, selectedT
        - Acak ulang posisi teks jawaban (Options A-E). 
        - Update 'answer_key.correct_option' sesuai posisi baru.
     6. **DIFFICULTY**: Pastikan field 'difficulty' (1-5) tetap ada. Jika soal menjadi lebih sulit setelah revisi, naikkan nilainya.
+    7. **PRESERVE ALL QUESTIONS**: JANGAN mengurangi jumlah soal. Semua soal yang diberikan harus dikembalikan.
+    8. **PRESERVE METADATA**: JANGAN menghapus atau mengubah field 'meta' (pipeline_id, pipeline_code, topic_code, subtopic_code, theme_code, news_topic, question_type).
 
     OUTPUT:
     Kembalikan JSON yang sudah divalidasi, dipersulit (tricky), dipadatkan (concise), dan diacak.
+    PASTIKAN semua soal dikembalikan dan semua metadata dipertahankan.
     HANYA return JSON murni.
   `;
 
