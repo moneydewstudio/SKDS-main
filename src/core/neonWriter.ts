@@ -149,6 +149,9 @@ console.log('[Neon] Themes table recreated (INTEGER subtopic_id, UUID id)');
     await sql`BEGIN`;
 
     try {
+      // Track inserted question IDs for logging
+      const insertedQuestionIds: number[] = [];
+
       // Process all questions
       for (const q of questions) {
         const categoryName = q.content.category;
@@ -274,6 +277,9 @@ console.log('[Neon] Themes table recreated (INTEGER subtopic_id, UUID id)');
           throw new Error(`Failed to insert question: ${q.content.question_text.substring(0, 50)}`);
         }
         const insertedQ = questionResult[0];
+        
+        // Track the inserted question ID
+        insertedQuestionIds.push(insertedQ.id);
 
         // Insert options
         for (const [key, text] of Object.entries(q.content.options)) {
@@ -329,7 +335,7 @@ console.log('[Neon] Themes table recreated (INTEGER subtopic_id, UUID id)');
 
       // Commit transaction
       await sql`COMMIT`;
-      console.log(`[Neon] Successfully saved ${questions.length} questions`);
+      console.log(`[Neon] Successfully saved ${insertedQuestionIds.length} questions with IDs: ${insertedQuestionIds.join(', ')}`);
 
     } catch (innerError) {
       // Rollback on any error

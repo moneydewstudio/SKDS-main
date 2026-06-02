@@ -125,6 +125,9 @@ export const saveBatchToNeon = async (connectionString: string, questions: Gener
     // 2. DATA INSERTION
     // =========================================================
 
+    // Track inserted question IDs for logging
+    const insertedQuestionIds: string[] = [];
+
     for (const q of questions) {
       // A. HANDLE TOPIC (The high-level Category: TWK, TIU, TKP)
       const categoryName = q.content.category; // TWK, TIU, TKP
@@ -188,6 +191,9 @@ export const saveBatchToNeon = async (connectionString: string, questions: Gener
         RETURNING id
       `;
 
+      // Track the inserted question ID
+      insertedQuestionIds.push(insertedQ.id);
+
       // D. INSERT OPTIONS
       for (const [key, text] of Object.entries(q.content.options)) {
         const optionKey = key.toUpperCase();
@@ -230,6 +236,8 @@ export const saveBatchToNeon = async (connectionString: string, questions: Gener
         `;
       }
     }
+
+    console.log(`[Neon] Successfully saved ${insertedQuestionIds.length} questions with IDs: ${insertedQuestionIds.join(', ')}`);
 
   } catch (error: any) {
     console.error("Neon DB Error:", error);
