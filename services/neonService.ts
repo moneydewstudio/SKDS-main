@@ -156,6 +156,11 @@ export const saveBatchToNeon = async (connectionString: string, questions: Gener
           ? q.content.difficulty 
           : 3;
 
+      // Generate question code with random suffix to prevent duplicate codes
+      const baseCode = q.meta.pipeline_code || null;
+      const randomSuffix = baseCode ? `-${Math.random().toString(36).substring(2, 8)}` : '';
+      const questionCode = baseCode ? `${baseCode}${randomSuffix}` : null;
+
       // TEAM_036: Check for duplicate question by question_text to prevent replacement
       const existingQuestion = await sql`
         SELECT id FROM questions 

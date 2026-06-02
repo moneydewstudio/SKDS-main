@@ -72,10 +72,14 @@ export const runPipeline = async (
   const result = await client.generateJSON(prompt, useGrounding) as GeneratedQuestionBatch;
   
   // Handle different response formats from AI
-  // AI might return: { questions: [...] } or { question: {...} } or just {...}
+  // AI might return: { questions: [...] } or { question: {...} } or just [...] array
   let questions = result.questions;
   
-  if (!questions) {
+  // If result itself is an array (AI returned questions directly), use it
+  if (Array.isArray(result)) {
+    console.log('[PromptBuilder] AI returned questions as direct array');
+    questions = result;
+  } else if (!questions) {
     console.error('[PromptBuilder] No questions field in result:', JSON.stringify(result, null, 2));
     throw new Error('AI response missing questions field');
   }

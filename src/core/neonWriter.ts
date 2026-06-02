@@ -226,7 +226,10 @@ console.log('[Neon] Themes table recreated (INTEGER subtopic_id, UUID id)');
           : q.meta.news_topic;
 
         // Generate question code from pipeline info (if available in meta)
-        const questionCode = q.meta.pipeline_code || null;
+        // Add random suffix to prevent duplicate codes within the same batch
+        const baseCode = q.meta.pipeline_code || null;
+        const randomSuffix = baseCode ? `-${Math.random().toString(36).substring(2, 8)}` : '';
+        const questionCode = baseCode ? `${baseCode}${randomSuffix}` : null;
 
         // TEAM_036: Check for duplicate question by question_text to prevent replacement
         const existingQuestion = await sql`
