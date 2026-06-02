@@ -71,6 +71,28 @@ export const runPipeline = async (
   const useGrounding = pipeline.contextSource === 'news';
   const result = await client.generateJSON(prompt, useGrounding) as GeneratedQuestionBatch;
   
+  // Handle different response formats from AI
+  // AI might return: { questions: [...] } or { question: {...} } or just {...}
+  let questions = result.questions;
+  
+  if (!questions) {
+    console.error('[PromptBuilder] No questions field in result:', JSON.stringify(result, null, 2));
+    throw new Error('AI response missing questions field');
+  }
+  
+  // If questions is not an array (single question object), wrap it
+  if (!Array.isArray(questions)) {
+    console.log('[PromptBuilder] AI returned single question object, wrapping in array');
+    questions = [questions];
+  }
+  
+  if (questions.length === 0) {
+    console.error('[PromptBuilder] Empty questions array in result:', JSON.stringify(result, null, 2));
+    throw new Error('AI response contains empty questions array');
+  }
+  
+  console.log(`[PromptBuilder] Received ${questions.length} question(s) from AI`);
+  
   // Inject pipeline metadata into each question
   // For TIU: 3-level hierarchy (topic → subtopic → theme)
   // For TWK/TKP: 2-level hierarchy (topic → subtopic, theme is null)
@@ -79,7 +101,7 @@ export const runPipeline = async (
     ? `${pipeline.subtopicCode}|${pipeline.themeCode}`
     : pipeline.subtopicCode;
   
-  for (const q of result.questions) {
+  for (const q of questions) {
     q.meta.pipeline_id = pipeline.id;
     q.meta.pipeline_code = pipelineCode;
     q.meta.topic_code = pipeline.topicCode;
@@ -100,7 +122,11 @@ export const runPipeline = async (
     }
   }
   
-  return result;
+  // Return the result with the processed questions array
+  return {
+    ...result,
+    questions
+  };
 };
 
 // Export for monitoring/debugging
